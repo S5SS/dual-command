@@ -1,0 +1,15 @@
+[h1]BUILD 6[/h1]
+
+Fighers:
+- hw1 int/bomber res 800 -> 500 ru 30 -> 25 secs (should be cheaper than hw2 considering hw1 int/bombers are slightly worse than hw2)
+
+Corvettes:
+- hw1 multigun vett res 1000 -> 800 ru 60 -> 50 secs (too much for just a better version of the light vett)
+- hw1 salvage vett hp 1000 -> 1500 (build 4) -> 1200 (build 6) (buff was to make up for the salvette bug, but 1000 is still too easy to kill)
+- hw1 salvage vett 255 -> 290 (build 4) -> 255 (build 6) (same reason as above)
+
+Frigates:
+- hw1 drone frigate 900 -> 800 (build 5) -> 700 ru (build 6) (not really worth the cost)
+- hw1 drone frigate res 1300 -> 1000 ru 80 -> 60 secs (not worth it for what is mainly an anti fighter unit)
+
+idea: double ref units cap for hw1

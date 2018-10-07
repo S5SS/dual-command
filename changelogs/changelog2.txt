@@ -1,0 +1,45 @@
+[h1]BUILD 2[/h1]
+
+Fighters:
+- hw2 int damage vs collectors 0.33 -> 0.363 (build 1) -> 0.4 (build 2) (ints were absolute trash in 2.3, no point in winning int superiority)
+  hw1 ints do more damage to colls than hw2 already
+
+Corvettes:
+- vaygr laser vett 650 -> 625 ru
+
+Frigates:
+- capture immobilize percentage 50% -> 20% (no one bothers with capturing because all you need to do is hyper away, this is to nerf anti marine)
+
+Captials:
+- hw2 mothership build speed 1000 -> 1500 ru (+50%)
+- hw2 carrier build speed 1500 -> 2250 ru (+50%)
+- hw2 shipyard build speed 1000 -> 1750 ru (+75%)
+- hiig shipyard build speed upgrade 40 -> 60 secs (vaygr sy is 95 also the hiig ms build speed takes 60 secs, makes no sense that its shorter)
+
+- vaygr cap ship speed res 2000 -> 1750 ru
+- hiig bc armor 1500 -> 2000 ru (makes no sense that its the same as for dd)
+- hiig bc speed 600 -> 900 ru
+- hiig mothership hp 30 -> 45 secs (its a get out of jail free card)
+- destroyer cap 6 -> 5 (6 destroyer deathball is lame to fight, destroyers got a huge buff already)
+
+Other:
+- fixed 2x races from appearing in random races
+
+
+
+
+
+- total for dd and bc:
+
+     hiig vays
+fac: 1800 1250
+sy:  3500 4000
+dd:  1500 2000
+bc:  2000 2500
+hp:  3500 3500
+sp:  1500 1750
+hyp:    0  750
+mods: 450    0
+tot:14250 15750
+
+also hiig gets to sell their adv res 

@@ -1,0 +1,22 @@
+[h1]BUILD 3[/h1]
+
+Corvettes:
+- vaygr laser vett damage to capitals +15% (they seem to have lower dps than bombers, makes no sense)
+
+Frigates:
+- hw1 support frigate 65 -> 60 secs (same as ion and assault)
+- vaygr marine frigate res 1000 -> 800 ru 60 -> 50 secs
+
+Capitals:
+- hw2 destroyers -50% accuracy vs fighters and corvettes (they are actually surprisingly decent vs swarm)
+- hw1 destroyers -50% damage vs fighters and corvettes (4 laser vetts actually used to lose to a hw1 destroyer, doesn't help much vs fighters though)
+- hiig destroyer res 90 -> 100 secs (nerf destroyer rush, for vaygr it takes 140 secs)
+
+Other:
+- moved dual command into view while scrolled up so it is easier to check whether its on or off (easy to forget it was left on)
+- removed Disable Platforms option from hw1 deathmatch
+- fixed bug where research tab is unclickable when using dual command
+- kamikaze damage 100% -> 170% (build 1) -> 200% (build 3)
+- kamikaze damage to collectors -50% (so you cant just cheese kamikaze the enemies eco)
+- kamikaze damage of collectors +66% (now colls might actually be able to kill stuff in real game situations, still very inefficient though)
+  (8 hw2 collectors to kill a vaygr carrier 10 to kill a hiig carrier (no upgrades))

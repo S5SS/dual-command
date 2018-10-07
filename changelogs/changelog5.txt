@@ -1,0 +1,35 @@
+[h1]BUILD 5[/h1]
+
+Fighters:
+- hw1 scout 8 -> 7 secs (hw1 ints take the same time)
+
+Corvettes:
+- hw1 salvage vett res 1200 -> 500 ru 60 -> 30 secs
+- hw1 heavy vett res 600 -> 800 ru 30 -> 50 secs
+- hw1 multi-gun vett res 800 -> 1000 40 -> 60 secs
+- hw1 minelaying res 1200 -> 1500 ru (same as vaygr)
+  (the above 4 changes are to redistribute the research cost of going for high tech vetts, almost noone gets vetts specifically for salvs)
+  (for example to get heavies you had to spend 3300 ru 165 secs but now its 2800 ru 155 secs)
+- hw1 minelayers 275 -> 400 ru 35 -> 45 secs (now equal to hw2, hw1 also gets the best supporting units to minelayers ei gravs, mdd etc)
+- hw1 light, heavy and multigun vetts -10 ru -1 sec
+
+Frigates:
+- kushan drone frigate 900 -> 800 ru 70 -> 60 secs (no reason for it to be that much, they cant even beat pulsars, barely beats bombers)
+- hw1 ion frigates 800 -> 700 (hgn ion < hw1 ion < hmf)
+- hw1 support frigate res 1300 -> 1000 ru 75 -> 60 secs (to make builds that skip ion frigs cheaper)
+- hw1 ion res 2000 -> 2250 ru 120 -> 135 secs (to offset cheaper support frigates)
+
+Capitals:
+- hw1 carriers 165 -> 130 secs (vaygr takes 40 hiig takes 65, more than double the time of a hiig carrier is a bit much)
+- hw1 carrier res 1700 -> 1500 ru
+- hw1 mdd res 3500 -> 3000 ru
+- hw1 dd res 5000 -> 4000 ru
+- hw1 bc res 9000 -> 7500 (build 1) -> 7000 (build 5) ru (caps cost far too much as hw1)
+
+Utility:
+- hw1 cloak res 800 -> 500 ru 100 -> 50 secs (too inconvenient to get)
+
+Other:
+- fixed missing vaygr 2x research icons
+- fixed a 2.1 bug where you could build 2 research ships at once if you only build them from carriers or only from motherships
+- fixed the salvage capture scuttle bug

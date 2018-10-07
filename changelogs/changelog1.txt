@@ -1,0 +1,42 @@
+[h1]BUILD 1[/h1]
+
+Fighter:
+- hw1 + hiig ints do 20% more damage to vetts
+- vaygr ints do + 10% damage to vetts (less because they have lance)
+- vaygr lance speed increased to slightly less than int speed
+- vaygr lance damage +28% (lance now actually beat miss vetts in equal numbers and significantly beat them in equal rus)
+- all ints damage to collectors +10%
+
+Corvettes:
+- vaygr command vett and laser vett research time 60 -> 45 secs (doesnt make sense they take more time than assault frigates)
+- hiig pulsar -20% accuracy vs fighters
+- minelayers are now non military units (to make military selection easier)
+
+Frigates:
+- hiig defense field frigate 1250 -> 1000 ru 70 -> 60 secs
+- hiig defense field frigate move speed 177 -> 230 (same as marine frigate)
+
+Capitals:
+- hw1 bc res 9000 -> 7500 ru
+- hw1 missile destroyer hp -25% (they were squishy in the first place to make up for their insane swarm dps)
+- vaygr cap ship armor cost 4000 -> 3500 ru (much more than it is for hiig especially if you only want destroyers)
+
+Platforms:
+- vaygr platform production facility 625 -> 600 ru
+- vaygr hyperspace platform 375 -> 325 ru
+
+Utility:
+- all proximity sensor res cost 500 -> 600 ru 35/40 -> 45 secs (to make anti cloak same cost as cloak and harder to get)
+- hiig hyperspace sensors 250 -> 500 ru 35 -> 45 secs (too cheap for how massively it helps against things like angle dd/bc)
+- vaygr hyperspace sensors 250 -> 750 ru 35 secs -> 45 secs (hiig gets better sensors)
+- hiig anti cloak sensors 250 -> 375 ru 35 -> 45 secs (ruins alot of nice cloak strats with how easy it is to get)
+- hiig collector repair 750 -> 500 ru 40 -> 35 secs (It already costs enough to move collectors away from mining)
+- vaygr collector repair 500 -> 250 ru 30 -> 25 secs (cheaper because the vaygr collector armor upgrade costs more)
+
+Other:
+- friendly fire damage: 50% -> 100%
+- kamikaze damage multiplier 100% -> 170% (kamikaze is still very inefficient but might actually be a viable strat in certain situations)
+										  (12 missile vetts will kill an unupgraded vaygr carrier - its still very inefficient but you can actually kill stuff now)
+
+
+

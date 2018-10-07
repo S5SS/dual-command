@@ -1,0 +1,33 @@
+[h1]BUILD 4[/h1]
+
+Fighters:
+- hw1 ints 9 -> 8 secs (in 2.1 it was 7, now 5 ints takes 40 secs, hw1 int takes 35 secs)
+- hw1 ints 90 -> 110 hp (hw2 dock micro absolutely decimates hw1)
+
+Corvettes:
+- hw1 salvage vett speed 255 -> 290 (same as heavy vett)
+- hw1 salvage vett health 1000 -> 1500
+- hw1 salvage vett build time 30 -> 25 secs
+- vaygr missile vett damage to frigates and capitals -30%
+- hw1 heavy vett damage vs hw2 vetts +40% (hw1 heavy vetts lose to hw2 anti-vett vetts now they are close to equal in terms of rus and build time)
+
+Frigates:
+- hw1 support frigate heal rate +50% (now its more than double a repair vett, used to be less)
+- hw2 capture frigates are now non military units to help with military selection
+- hiig torpedo frigate imp torp 230 -> 250 speed (same speed as anti vett torp)
+- hiig torpedo frigate cluster torpedo speed 250 -> 300 timeout 4 -> 6 secs
+- hiig torpedo frigate cluster torpedo damage vs hw1 vetts -50% (they kill their vetts too quickly, hw2 gets the advantage of dock micro)
+  (cluster torpedoes are the 4 torpedoes that spawn from the main torpedo)
+
+Capitals:
+- all destroyers damage to collectors -50% (they kill them insanely fast, nerf to destroyer rush on small maps)
+
+Utility:
+- hw2 collectors repair rate on frigates +56% and on capitals +17% 
+  (now its more economical to transfer collectors to repair, frigates get a bigger buff because the default repair speed is very slow relative to capitals)
+
+Other:
+- vaygr 'carriers only' starting fleets 2 -> 1 carrier for 1 carrier mode and 3 -> 2 carriers for 2 carrier mode 
+  (vaygr carrier may be squishier and less versatile but 1 vs 2 or 2 vs 3 production queues is far worse balance wise)
+- fixed unaligned version number in main menu
+- removed ability to research minelayer tech when minelayers are disabled

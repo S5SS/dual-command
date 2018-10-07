@@ -1,0 +1,6 @@
+[h1]BUILD 0[/h1]
+
+Options:
+- added option to disable minelayers
+- added option to disable platforms
+- added option to control 2 players forces at once to make up for an odd number of players
