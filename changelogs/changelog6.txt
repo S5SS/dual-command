@@ -1,9 +1,12 @@
 [h1]BUILD 6[/h1]
 
 Fighers:
-- hw1 int/bomber res 800 -> 500 ru 30 -> 25 secs (should be cheaper than hw2 considering hw1 int/bombers are slightly worse than hw2)
+- hw1 fighter chasis res 500 -> 200 (hw1 loses at least 1k ru from more expensive collectors that take longer to build to they cover the cost of mods)
+- hw1 int/bomber res 800 -> 500 ru 30 -> 25 secs (should be cheaper than hw2 considering hw1 int/bombers dont get as powerful dock micro)
+- hw1 cloaked fighter and defense fighter 1100 -> 1000 ru
 
 Corvettes:
+- hw1 light vett res 1500 -> 1000 ru (hiig gunship res is 1200 in total, a worse version of gunships shouldnt cost so much, the cost of mods is covered by more expensive eco setup)
 - hw1 multigun vett res 1000 -> 800 ru 60 -> 50 secs (too much for just a better version of the light vett)
 - hw1 salvage vett hp 1000 -> 1500 (build 4) -> 1200 (build 6) (buff was to make up for the salvette bug, but 1000 is still too easy to kill)
 - hw1 salvage vett 255 -> 290 (build 4) -> 255 (build 6) (same reason as above)
@@ -11,5 +14,22 @@ Corvettes:
 Frigates:
 - hw1 drone frigate 900 -> 800 (build 5) -> 700 ru (build 6) (not really worth the cost)
 - hw1 drone frigate res 1300 -> 1000 ru 80 -> 60 secs (not worth it for what is mainly an anti fighter unit)
+- hw1 assault frigate turret turn speed +100% (25 -> 50, vaygr assault frigate is 60)
+- hw1 assault gun and bomb speed +100% (to hit hw2 vetts more reliably)
+- hw1 assault frigate bomb now leads shots on enemies (to hit hw2 vetts more reliably)
+  (assault frigates are much worse at killing vetts compared to torpedo frgiates, they are still a bit slower but do kill moving vetts alot faster)
+- hw1 assault frigate gun accuracy vs fighters -20% (because the speed increase made them able to beat bombers)
+- hw1 ion frigate res 2250 -> 2000 ru (much more than other races)
+- hw1 support frigate res 1000 -> 800 ru
+- capture frigate immobilize percentage is now 50%
 
-idea: double ref units cap for hw1
+Capitals:
+- hw1 carrier res 1700 -> 1500 (build 5) -> 1000 (build 6) ru
+- hw1 mdd res 3000 -> 2500 ru
+- hw1 dd res 4000 -> 3500 ru
+- hw1 bc res 9000 -> 7500 (build 1) -> 7000 (build 5) -> 6000 (build 6) ru (hiigaran bc res: 2500 + 2000 + 900 = 6400 but you get to skip most tech)
+- hw1 dd 2250 -> 2000 (hw1 dd is almost identical to hw2 dd in terms of damage to frigates and captials)
+- hw1 bc 4500 -> 4000 (hw1 bc is the weakest bc in the game and cant build modules)
+
+Other:
+- hw1 sensors array res 1000 -> 500 ru 80 -> 60 secs (not worth it)

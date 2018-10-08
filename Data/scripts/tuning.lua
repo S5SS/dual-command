@@ -209,7 +209,7 @@ Capture = {
     -- modify base progress by no more than this
     maxModifier 				= 4.0,
     -- once the capture attempt has passed this progress level the target can no longer move
-    immobilisedCaptureProgress	= 0.2,
+    immobilisedCaptureProgress	= 0.5,
     -- if the target can't be captured due to unit caps it is disabled for this many seconds
     disableTime					= 120.0,
 }
