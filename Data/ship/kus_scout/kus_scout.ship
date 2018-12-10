@@ -6,7 +6,7 @@ NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
-setTacticsMults(NewShipType, "MAXSPEED", 1.0, 1.10, 1.0)
+setTacticsMults(NewShipType, "MAXSPEED", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.20, 0.80, 1.0)
 setTacticsMults(NewShipType, "ENGINEBRAKE", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "THRUSTER", 1.0, 1.0, 1.0)
@@ -94,8 +94,8 @@ NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
 NewShipType.visualRange=1500
-NewShipType.prmSensorRange = getShipNum(NewShipType, "prmSensorRange", 8000)
-NewShipType.secSensorRange = getShipNum(NewShipType, "secSensorRange", 10000)
+NewShipType.prmSensorRange = getShipNum(NewShipType, "prmSensorRange", 7000)
+NewShipType.secSensorRange = getShipNum(NewShipType, "secSensorRange", 8500)
 NewShipType.detectionStrength=1
 NewShipType.TOIcon="Triangle"
 NewShipType.TOScale=1
