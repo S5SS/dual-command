@@ -1,18 +1,19 @@
 
-StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_HeavyMissile","Normal",40,4500,0,0,0,0,1,0,0,20,0,0,1,1,0,0,0.1,"Normal",0,0,0);
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",2700,2700,"");
-setPenetration(NewWeaponType,30,1,
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_HeavyMissile","Normal",40,6000,0,0,0,0,1,0,1,25,0,0,1,1,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",5000,5000,"");
+setPenetration(NewWeaponType,75,1,
 {PlanetKillerArmour=0},
 {SwarmerArmor=0.10},
 {SpaceMineArmor=1},
 {TorpedoArmor=0},
 {HeavyMissileArmor=0},
 {SmallMissileArmor=0},
-{SubSystemArmour=0.2},
-{MediumArmour=1.0},
+{SubSystemArmour=0.3},
+{resarmour=0.2},
 {LightArmour=0.1},
 {LightArmour_hw1=0.1},
-{resarmour=0.2 * 0.5});
+{HeavyArmour=1.15},
+{MediumArmour=0.59});
 setAccuracy(NewWeaponType,1,
 {Swarmer=0.01},
 {SpaceMine=0.01},
@@ -25,6 +26,6 @@ setAccuracy(NewWeaponType,1,
 {Corvette_hw1=0},
 {munition=0});
 setAngles(NewWeaponType,180,0,0,0,0);
-setMiscValues(NewWeaponType,0,0.5);
+setMiscValues(NewWeaponType,0,0.8);
 
 setFireMultFactor(NewWeaponType, 1.0);
