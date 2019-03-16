@@ -36,6 +36,7 @@
 ## Gunships
 > *Extremely unreliable in landing their shots, making the unit often undesirable*
 * **Weapon projectile speed up:** `1500 => 1600` (*`hgn_vulkankineticturret.wepon`*)
+* **Weapon range up:** `1600 => 2000` (*`hgn_vulkankineticturret.wepon`*)
 
 ---
 
