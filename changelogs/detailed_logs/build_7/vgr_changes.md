@@ -20,7 +20,7 @@
 ---
 
 ## HMF, Destroyer and Battlecruiser Missiles
-> *Heavy missile are one shotting corvettes and HMF light missiles do massive damage to clustered strikecraft - this leads to units that aren't supposed to counter fighters/vetts doing far better than expected*
+> *Heavy missile are one shotting corvettes and HMF light missiles deal massive damage to clustered strikecraft - this leads to units that aren't supposed to counter fighters/vetts doing far better than expected*
 * **Heavy missile penetration vs corvette reduced** `corvette penetration 1.0 => 0.1` so they deal -90% damage
 * **HMF light missile fire interval reduced** `8s => 10s per shot`
 * **HMF light missile damage reduced** `109 => 15`
