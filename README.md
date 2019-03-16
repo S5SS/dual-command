@@ -1,15 +1,21 @@
 # Dual Command Mode
-Dual Command Mode is a mod for Homeworld Remastered 2.1 which allows you to control 2 fleets at once in a multiplayer/skirmish match to make up for an odd number of players or if you just want a challenge.
+Dual Command Mode is a mod for Homeworld Remastered 2.1 which allows you to control two fleets at once in a multiplayer/skirmish match to make up for an odd number of players or if you just want a challenge.
 
 ## Description
 In multiplayer you'll often end up with an odd number of players which means you either need to add AI, fight in uneven teams or FFA all of which are not always optimal. 
-Dual Command Mode allows one player to control two players worth of units. You will start with two motherships, 2 carriers, double the usual starting RUs and your unit caps are also double what they usually are. Research cost is also doubled to ensure you pay the full price for two players worth of units.
+Dual Command Mode allows one player to control two players worth of units. You will start with:
+- Two motherships
+- Two carriers
+- Double the collectors
+- Double the usual starting RUs
+- Double the unit cap
+- And double the research cost to ensure you pay the full price for two players worth of units
 
 ## New deathmatch options
-- Enable/Disable Minelayers
-- Enable/Disable Platforms
-- Enable/Disable Dual Command Mode
-- Observer/Spectator Race
+- Enable/disable minelayers
+- Enable/disable platforms
+- Enable/disable Dual Command Mode
+- Observer/spectator race
 
 ## To Enable Dual Command
 - Change your race to a 2X version of the race
