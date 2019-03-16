@@ -17,7 +17,7 @@
 ---
 
 ## Multiguns
-> *This unit was spending a ton of time trying to track units juust out of range (hw1 fighters have long arcs, as to hw2 evasive fighters), resulting in extremely long kill times - far too long to outpace re-enforcing fighters. The script used by multiguns has also been tweaked to make the unit more aggressive in chasing its targets.*
+> *This unit was spending a ton of time trying to track units juust out of range (hw1 fighters have long arcs, as do hw2 evasive fighters), resulting in extremely long kill times - far too long to outpace re-enforcing fighters. The script used by multiguns has also been tweaked to make the unit more aggressive in chasing its targets.*
 * `kus_multigun1.wepn, kus_multigun2.wepn`:
   * **Range up:** `1600 => 2000`
   * **Damage up:** `[8-10] => 12`
