@@ -11,7 +11,7 @@ Dual Command Mode allows one player to control two players worth of units. You w
 - Double the unit cap
 - And double the research cost to ensure you pay the full price for two players worth of units
 
-## New deathmatch options
+## New Deathmatch Options
 - Enable/disable minelayers
 - Enable/disable platforms
 - Enable/disable Dual Command Mode
