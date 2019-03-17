@@ -18,7 +18,7 @@ NewShipType.paradeData="vgr_hyperspace_platform"
 NewShipType.formationSpacing=400
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
-NewShipType.mainEngineMaxSpeed = getShipNum(NewShipType, "mainEngineMaxSpeed", 600)
+NewShipType.mainEngineMaxSpeed = getShipNum(NewShipType, "mainEngineMaxSpeed", 800)
 NewShipType.thrusterMaxSpeed = getShipNum(NewShipType, "thrusterMaxSpeed", 600)
 NewShipType.rotationMaxSpeed=171
 NewShipType.thrusterAccelTime=5
@@ -131,7 +131,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"FormHyperspaceGateCommand",1,1000,500,1000,0);
+addAbility(NewShipType,"FormHyperspaceGateCommand",1,1000,500,750,0);
 addAbility(NewShipType,"CanBeCaptured",30,0.1);
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",10000,20);
