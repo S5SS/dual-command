@@ -164,8 +164,8 @@ addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,0.90,"Fighter, Fighter_hw1, Corv
 {Frigate="flyround_CommandVette"});
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",75,20);
-AddShipMultiplier(NewShipType,"WeaponAccuracy","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,2200);
-AddShipMultiplier(NewShipType,"WeaponDamage","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,2200);
+AddShipMultiplier(NewShipType,"WeaponAccuracy","OwnShipsWithinRadiusExcludingThisShip","None",1.10,1.10,2200);
+AddShipMultiplier(NewShipType,"WeaponDamage","OwnShipsWithinRadiusExcludingThisShip","None",1.10,1.10,2200);
 StartShipWeaponConfig(NewShipType,"Vgr_CommandGun","Weapon_Gun","")
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400

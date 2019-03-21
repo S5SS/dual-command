@@ -164,7 +164,7 @@ StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_Defence1","");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_Defence2","");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_Defence3","");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_Defence4","");
-addShield(NewShipType,"EMP",1000,20);
+addShield(NewShipType,"EMP",850,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Vgr_Des_Engine","","","","","","","","");
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.45,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg05",1, 0.2,0,0,0, 25,10,-100,30,35,75,62,75,0,0,0,80,0,0,0,50);

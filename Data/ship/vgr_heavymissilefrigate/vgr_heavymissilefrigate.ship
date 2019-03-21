@@ -173,8 +173,8 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1");
 NewShipType.minFalloffDamageDist=130
 NewShipType.maxFalloffDamageDist=130*2
 NewShipType.maxFalloffScuttleDamageDist=130*4
-NewShipType.explosiveScuttleDamageOnDeath=971
+NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=194
+NewShipType.explosiveDamageOnDeath=50
 NewShipType.radiusDamageEvadeMod=1.1
 NewShipType.canSurround=1

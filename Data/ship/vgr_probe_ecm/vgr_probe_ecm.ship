@@ -122,7 +122,7 @@ NewShipType.launchFormation="delta"
 NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType,"ParadeCommand",1);
 LoadModel(NewShipType,1);
-AddShipMultiplier(NewShipType,"SensorDistortion","OwnShipsWithinRadius","Linear",0.6,0.6,6000);
+AddShipMultiplier(NewShipType,"SensorDistortion","OwnShipsWithinRadius","Linear",0.3,0.3,8000);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=1
 NewShipType.sobSpecialDieTime=1
