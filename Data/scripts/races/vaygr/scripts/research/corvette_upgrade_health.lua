@@ -15,7 +15,7 @@ base_research = {
 		TargetType =			Family,
 		TargetName =			"Corvette",
         UpgradeName =			"MAXHEALTH",
-        UpgradeValue =			1.3,
+        UpgradeValue =			1.35,
 		Icon =				Icon_Health,
 		ShortDisplayedName = 		"$7341",
 	},
