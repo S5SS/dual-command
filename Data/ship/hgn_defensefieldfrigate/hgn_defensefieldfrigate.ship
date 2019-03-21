@@ -147,7 +147,7 @@ addCustomCode(NewShipType,"data:Scripts/No_Salvage_Scuttle.lua","","","Update_No
 -- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Top","Hardpoint_Top","Weapon","Innate","Ship","Hgn_VulcanKineticTurretHeavy","","","","","","","","");
-addShield(NewShipType,"EMP",10000,20);
+addShield(NewShipType,"EMP",70,20);
 AddShipAbility(NewShipType,"DefenseField",1,"ThisShipOnly",0);
 NewShipType.battleScarCoverage=2
 NewShipType.battleScarBudgetLow = 400
@@ -167,9 +167,9 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1");
 NewShipType.minFalloffDamageDist=100
 NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
-NewShipType.explosiveScuttleDamageOnDeath=1050
+NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=210
+NewShipType.explosiveDamageOnDeath=50
 NewShipType.radiusDamageEvadeMod=1.1													 
 NewShipType.hideNormalAttackUICooldown=1	
 NewShipType.strikeGroupSpeed=5000
