@@ -1,5 +1,5 @@
 # Dual Command Mode
-Dual Command Mode is a mod for Homeworld Remastered 2.1 which allows you to control two fleets at once in a multiplayer/skirmish match to make up for an odd number of players or if you just want a challenge.
+Dual Command Mode is a mod for Homeworld Remastered 2.1 which allows you to control two fleets at once in a multiplayer/skirmish match to make up for an odd number of players. This mod also features balance changes and bug fixes.
 
 ## Description
 In multiplayer you'll often end up with an odd number of players which means you either need to add AI, fight in uneven teams or FFA all of which are not always optimal. 
