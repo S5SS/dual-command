@@ -151,7 +151,7 @@ addAbility(NewShipType,"RetireAbility",1,1);
 
 -- addCustomCode(NewShipType,"data:Ship/Kus_Mothership/Kus_Mothership.lua","Load_Kus_Mothership","Create_Kus_Mothership","Update_Kus_Mothership","Destroy_Kus_Mothership","Kus_Mothership",4)
 
-addCustomCode(NewShipType, "data:Ship/Hgn_Destroyer/Hgn_Destroyer.lua", "", "", "Update_Hgn_Destroyer", "", "hgn_destroyer", 0.2);
+addCustomCode(NewShipType, "data:Ship/Hgn_Destroyer/Hgn_Destroyer.lua", "", "", "Update_Hgn_Destroyer", "Destroy_Hgn_Destroyer", "hgn_destroyer", 0.2);
 
 -- fix to salvage vette scuttle bug
 -- addCustomCode(NewShipType,"data:Scripts/No_Salvage_Scuttle.lua","","","Update_No_Salvage_Scuttle","","Hgn_Destroyer",4)
