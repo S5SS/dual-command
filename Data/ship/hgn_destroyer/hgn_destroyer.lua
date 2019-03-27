@@ -74,14 +74,13 @@ function Update_Hgn_Destroyer(CustomGroup, playerIndex, shipID)
             -- glow effect every 10 calls
             this_dd.ticks_since_last_fx = this_dd.ticks_since_last_fx + 1
             if this_dd.ticks_since_last_fx == 10 then
-                FX_PlayEffect("mine_clear_glow_ring", CustomGroup, 10)
+                FX_PlayEffect("HGN_DD_THING", CustomGroup, 7)
                 this_dd.ticks_since_last_fx = 0
             end
-            -- with an update freq of 0.2, repairing 0.01 (1/100) hp per second
-            SobGroup_SetHealth(CustomGroup, this_dd.current_HP + 0.002)
+
+            SobGroup_SetHealth(CustomGroup, this_dd.current_HP + 0.0015)
         end
     end
-
 
     this_dd.last_checked_HP = SobGroup_HealthPercentage(CustomGroup)
 end
