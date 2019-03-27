@@ -8,7 +8,8 @@ function log_new_dd(shipID)
     local new_dd = {
         combat_ticks_queue = {},
         current_HP = nil,
-        last_checked_HP = nil
+        last_checked_HP = nil,
+        ticks_since_last_fx = 0
     }
     for i = 1, combat_ticks_length do
         new_dd.combat_ticks_queue[i] = 0
@@ -70,7 +71,14 @@ function Update_Hgn_Destroyer(CustomGroup, playerIndex, shipID)
         end
 
         if regen_enabled == 1 then
-            SobGroup_SetHealth(CustomGroup, this_dd.current_HP + 0.001)
+            -- glow effect every 10 calls
+            this_dd.ticks_since_last_fx = this_dd.ticks_since_last_fx + 1
+            if this_dd.ticks_since_last_fx == 10 then
+                FX_PlayEffect("mine_clear_glow_ring", CustomGroup, 10)
+                this_dd.ticks_since_last_fx = 0
+            end
+            -- with an update freq of 0.2, repairing 0.01 (1/100) hp per second
+            SobGroup_SetHealth(CustomGroup, this_dd.current_HP + 0.002)
         end
     end
 
