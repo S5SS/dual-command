@@ -54,6 +54,11 @@ Anchor_Options = {
 		defScale = 1.0,
 		saveOptions = "scale",
 	},
+	{
+		anchorName = "PlayersPatch_DefaultToSetting",
+		defScale = 2.0,
+		saveOptions = "scale",
+	},
 	
 	{
 		andThenAnother = "yup",

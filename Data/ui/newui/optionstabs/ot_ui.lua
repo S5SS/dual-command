@@ -44,8 +44,8 @@ FE_UI_CURSORSKIN = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = 4, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = 4, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = -1, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -1, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -105,8 +105,8 @@ FE_UI_ATISKIN = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = 4, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = 4, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = -1, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -1, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -158,6 +158,109 @@ FE_UI_ATISKIN = {
 	},
 }
 
+FE_UI_DEFAULTTO = {
+	type = "Frame",
+
+	visible = 1,
+	ignored = 1,
+	
+	Layout = {									
+		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
+		pad_LT = { l = 4, t = -1, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -1, rr = "px", br = "px" },
+	},
+	
+	autosize = 1,
+	
+	helpTipTextLabel = "m_lblHelpText",
+	arrangetype = "horiz",
+	;
+	
+	{
+		type = "TextLabel",
+		
+		Layout = {	
+			pos_XY = { x = 1.0, y = .5, xr = "px", yr = "par" },		
+			size_WH = {	w = .45, h = DROPDOWN_HEIGHT, wr = "par", hr = "scr"},	
+			pivot_XY = { 0, 0.5 },	
+		},
+
+		Text = {
+			textStyle = "RM_GenericLabelLarge_TextStyle",
+			text = "Default Tactical Overlay Setting", 
+		},
+		autosize=1,
+		helpTip = "$4103",
+	},
+	{
+		type = "DropDownListBox",	
+		name = "defaultToSetting",
+		selected = GetDefaultToSetting() - 1,
+		
+		Layout = {		
+			size_WH = {w = .5, h = DROPDOWN_HEIGHT, wr = "par", hr = "scr",},
+			pos_XY = { x = 1.0, y = .5, xr = "px", yr = "par" },		
+			pivot_XY = { 0, 0.5 },	
+		
+			--size_WH = {	w = 330/800, h = DROPDOWN_HEIGHT, wr = "scr", hr = "scr" },	
+		},
+		
+		ListBox = {
+			type = "ListBox",
+			width = 400,
+			backgroundColor = {0,0,0,255},
+			listBoxStyle = "FEListBoxStyle_Bordered",
+			;
+			-- 1
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Low",
+				},
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_DefaultToSetting', 1.0, 1)";
+			},
+			-- 2
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Normal",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_DefaultToSetting', 2.0, 1)";
+			},
+			-- 3
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "High",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_DefaultToSetting', 3.0, 1)";
+			},
+			-- 4
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Maximum",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_DefaultToSetting', 4.0, 1)";
+			},
+		},
+		helpTipTextLabel = "helpTip",
+		helpTip = "Set the default tactical overlay setting",
+	},
+}
+
 --------------------------------------------------
 FE_UIOPTION_TAB = {
 	type = "TabPage",
@@ -189,6 +292,7 @@ FE_UIOPTION_TAB = {
 		
 		FE_UI_CURSORSKIN,
 		FE_UI_ATISKIN,
+		FE_UI_DEFAULTTO,
 
 		{
 			type = "TextLabel",
@@ -233,5 +337,5 @@ FE_UIOPTION_TAB = {
 }
 
 --sets position for the additional sliders
-FE_UIOPTION_TAB[1][9][2][1].Text.text = RefBuildResearchLaunchPanelsScale --default text in the label
-FE_UIOPTION_TAB[1][9][2][2].scrollPosition = RefBuildResearchLaunchPanelsScale --default position for the scrollbar button
+FE_UIOPTION_TAB[1][10][2][1].Text.text = RefBuildResearchLaunchPanelsScale --default text in the label
+FE_UIOPTION_TAB[1][10][2][2].scrollPosition = RefBuildResearchLaunchPanelsScale --default position for the scrollbar button

@@ -52,6 +52,16 @@ function GetMissionDifficultyScale()
 	return MissionDifficultyScale
 end
 
+function GetDefaultToSetting()
+	DefaultToSetting = GetOptionValueUI("PlayersPatch_DefaultToSetting")
+
+	if DefaultToSetting < 1 or DefaultToSetting > 4 then
+		DefaultToSetting = 2
+	end
+
+	return DefaultToSetting
+end
+
 function GetOptionValueUI(OptionName)
 
 	--Load expanded options
