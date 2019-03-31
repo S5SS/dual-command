@@ -50,7 +50,7 @@ String_Properties = {
 	cfg_hyperspace_effect_fx = "hyperspace_gate",
 	cfg_hyperspace_effect_audio = [[etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN]],
 	
-	path_build = [[data:scripts/races/taiidan_2x/scripts/def_build.lua]],
+	path_build = [[data:scripts/races/taiidan/scripts/def_build.lua]],
 	path_research = [[data:scripts/races/taiidan_2x/scripts/def_research.lua]],
 	path_ai = [[data:scripts/races/taiidan/scripts/def_ai.lua]],
 	

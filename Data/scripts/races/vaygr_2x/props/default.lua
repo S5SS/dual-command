@@ -68,7 +68,7 @@ String_Properties = {
 	cfg_hyperspace_effect_fx = "hyperspace_gate_vgr",
 	cfg_hyperspace_effect_audio = [[etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN]],
 	
-	path_build = [[data:scripts/races/vaygr_2x/scripts/def_build.lua]],
+	path_build = [[data:scripts/races/vaygr/scripts/def_build.lua]],
 	path_research = [[data:scripts/races/vaygr_2x/scripts/def_research.lua]],
 	path_ai = [[data:scripts/races/vaygr/scripts/def_ai.lua]],
 	
