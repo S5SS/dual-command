@@ -5,7 +5,7 @@ build =
 --Fighters---------------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_Scout",
+		ThingToBuild =			"tai_scout",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		10,
@@ -14,7 +14,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_Interceptor",
+		ThingToBuild =			"tai_interceptor",
 		RequiredResearch =		"FighterChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		11,
@@ -23,7 +23,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_Defender",
+		ThingToBuild =			"tai_defender",
 		RequiredResearch =		"DefenderSubSystems",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		12,
@@ -32,7 +32,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_AttackBomber",
+		ThingToBuild =			"tai_attackbomber",
 		RequiredResearch =		"FighterChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		13,
@@ -41,7 +41,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_DefenseFighter",
+		ThingToBuild =			"tai_defensefighter",
 		RequiredResearch =		"DefenseFighter",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		14,
@@ -51,7 +51,7 @@ build =
 --Corvettes--------------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_RepairCorvette",
+		ThingToBuild =			"tai_repaircorvette",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		20,
@@ -60,7 +60,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_SalvageCorvette",
+		ThingToBuild =			"tai_salvagecorvette",
 		RequiredResearch =		"CorvetteChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		21,
@@ -69,7 +69,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_LightCorvette",
+		ThingToBuild =			"tai_lightcorvette",
 		RequiredResearch =		"CorvetteDrive",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		22,
@@ -78,7 +78,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_HeavyCorvette",
+		ThingToBuild =			"tai_heavycorvette",
 		RequiredResearch =		"HeavyCorvetteUpgrade",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		23,
@@ -87,7 +87,7 @@ build =
 	},		
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_MultiGunCorvette",
+		ThingToBuild =			"tai_multiguncorvette",
 		RequiredResearch =		"FastTrackingTurrets",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		24,
@@ -96,7 +96,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_MinelayerCorvette",
+		ThingToBuild =			"tai_minelayercorvette",
 		RequiredResearch =		"MinelayingTech",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		25,
@@ -106,7 +106,7 @@ build =
 --Frigates---------------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_AssaultFrigate",
+		ThingToBuild =			"tai_assaultfrigate",
 		RequiredResearch =		"CapitalShipChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		51,
@@ -115,7 +115,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_IonCannonFrigate",
+		ThingToBuild =			"tai_ioncannonfrigate",
 		RequiredResearch =		"IonCannons",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		52,
@@ -124,7 +124,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_SupportFrigate",
+		ThingToBuild =			"tai_supportfrigate",
 		RequiredResearch =		"CapitalShipDrive",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		50,
@@ -133,7 +133,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_FieldFrigate",
+		ThingToBuild =			"tai_fieldfrigate",
 		RequiredResearch =		"DefenseField",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		53,
@@ -143,7 +143,7 @@ build =
 --Capital Ships----------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_Destroyer",
+		ThingToBuild =			"tai_destroyer",
 		RequiredResearch =		"SuperHeavyChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		72,
@@ -152,7 +152,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_MissileDestroyer",
+		ThingToBuild =			"tai_missiledestroyer",
 		RequiredResearch =		"GuidedMissiles",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		71,
@@ -161,7 +161,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_Carrier",
+		ThingToBuild =			"tai_carrier",
 		RequiredResearch =		"SuperCapitalShipDrive",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		70,
@@ -170,7 +170,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_HeavyCruiser",
+		ThingToBuild =			"tai_heavycruiser",
 		RequiredResearch =		"HeavyGuns",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		73,
@@ -180,7 +180,7 @@ build =
 --Utility----------------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_ResourceCollector",
+		ThingToBuild =			"tai_resourcecollector",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,
@@ -189,7 +189,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_ResourceController",
+		ThingToBuild =			"tai_resourcecontroller",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		101,
@@ -198,7 +198,7 @@ build =
 	},		
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_ResearchShip",
+		ThingToBuild =			"tai_researchship",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		110,
@@ -207,7 +207,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_ResearchShip_1",
+		ThingToBuild =			"tai_researchship_1",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		111,
@@ -216,7 +216,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_ResearchShip_2",
+		ThingToBuild =			"tai_researchship_2",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		112,
@@ -225,7 +225,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_ResearchShip_3",
+		ThingToBuild =			"tai_researchship_3",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		113,
@@ -234,7 +234,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_ResearchShip_4",
+		ThingToBuild =			"tai_researchship_4",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		114,
@@ -243,7 +243,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_ResearchShip_5",
+		ThingToBuild =			"tai_researchship_5",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		115,
@@ -252,7 +252,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_Probe",
+		ThingToBuild =			"tai_probe",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		140,
@@ -261,7 +261,7 @@ build =
 	},		
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_ProximitySensor",
+		ThingToBuild =			"tai_proximitysensor",
 		RequiredResearch =		"ProximitySensor",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		141,
@@ -270,7 +270,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_SensorArray",
+		ThingToBuild =			"tai_sensorarray",
 		RequiredResearch =		"SensorArray",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		142,
@@ -279,7 +279,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_GravWellGenerator",
+		ThingToBuild =			"tai_gravwellgenerator",
 		RequiredResearch =		"GravityGenerator",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		143,
@@ -288,7 +288,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Tai_CloakGenerator",
+		ThingToBuild =			"tai_cloakgenerator",
 		RequiredResearch =		"CloakGenerator",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		144,
@@ -297,3 +297,4 @@ build =
 	},	
 }
 
+doscanpath("data:scripts", "applybuildtimes.lua")

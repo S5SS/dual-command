@@ -5,7 +5,7 @@ build =
 --Fighters---------------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Scout",
+		ThingToBuild =			"kus_scout",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		10,
@@ -14,7 +14,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Interceptor",
+		ThingToBuild =			"kus_interceptor",
 		RequiredResearch =		"FighterChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		11,
@@ -23,7 +23,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Defender",
+		ThingToBuild =			"kus_defender",
 		RequiredResearch =		"DefenderSubSystems",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		12,
@@ -32,7 +32,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_AttackBomber",
+		ThingToBuild =			"kus_attackbomber",
 		RequiredResearch =		"FighterChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		13,
@@ -41,7 +41,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_CloakedFighter",
+		ThingToBuild =			"kus_cloakedfighter",
 		RequiredResearch =		"CloakedFighter",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		14,
@@ -51,7 +51,7 @@ build =
 --Corvettes--------------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_RepairCorvette",
+		ThingToBuild =			"kus_repaircorvette",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		20,
@@ -65,7 +65,7 @@ build =
     --
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_SalvageCorvette",
+		ThingToBuild =			"kus_salvagecorvette",
 		RequiredResearch =		"CorvetteChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		21,
@@ -74,7 +74,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_LightCorvette",
+		ThingToBuild =			"kus_lightcorvette",
 		RequiredResearch =		"CorvetteDrive",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		22,
@@ -83,7 +83,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_HeavyCorvette",
+		ThingToBuild =			"kus_heavycorvette",
 		RequiredResearch =		"HeavyCorvetteUpgrade",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		23,
@@ -92,7 +92,7 @@ build =
 	},	
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_MultiGunCorvette",
+		ThingToBuild =			"kus_multiguncorvette",
 		RequiredResearch =		"FastTrackingTurrets",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		24,
@@ -101,7 +101,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_MinelayerCorvette",
+		ThingToBuild =			"kus_minelayercorvette",
 		RequiredResearch =		"MinelayingTech",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		25,
@@ -111,7 +111,7 @@ build =
 --Frigates---------------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_AssaultFrigate",
+		ThingToBuild =			"kus_assaultfrigate",
 		RequiredResearch =		"CapitalShipChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		51,
@@ -120,7 +120,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_IonCannonFrigate",
+		ThingToBuild =			"kus_ioncannonfrigate",
 		RequiredResearch =		"IonCannons",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		52,
@@ -129,7 +129,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_SupportFrigate",
+		ThingToBuild =			"kus_supportfrigate",
 		RequiredResearch =		"CapitalShipDrive",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		50,
@@ -138,7 +138,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_DroneFrigate",
+		ThingToBuild =			"kus_dronefrigate",
 		RequiredResearch =		"DroneTechnology",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		53,
@@ -148,7 +148,7 @@ build =
 --Capital Ships----------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Destroyer",
+		ThingToBuild =			"kus_destroyer",
 		RequiredResearch =		"SuperHeavyChassis",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		72,
@@ -157,7 +157,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_MissileDestroyer",
+		ThingToBuild =			"kus_missiledestroyer",
 		RequiredResearch =		"GuidedMissiles",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		71,
@@ -166,7 +166,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Carrier",
+		ThingToBuild =			"kus_carrier",
 		RequiredResearch =		"SuperCapitalShipDrive",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		70,
@@ -175,7 +175,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_HeavyCruiser",
+		ThingToBuild =			"kus_heavycruiser",
 		RequiredResearch =		"HeavyGuns",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		73,
@@ -185,7 +185,7 @@ build =
 --Utility----------------
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_ResourceCollector",
+		ThingToBuild =			"kus_resourcecollector",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,
@@ -194,7 +194,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_ResourceController",
+		ThingToBuild =			"kus_resourcecontroller",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		101,
@@ -203,7 +203,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_ResearchShip",
+		ThingToBuild =			"kus_researchship",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		110,
@@ -212,7 +212,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_ResearchShip_1",
+		ThingToBuild =			"kus_researchship_1",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		111,
@@ -221,7 +221,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_ResearchShip_2",
+		ThingToBuild =			"kus_researchship_2",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		112,
@@ -230,7 +230,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_ResearchShip_3",
+		ThingToBuild =			"kus_researchship_3",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		113,
@@ -239,7 +239,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_ResearchShip_4",
+		ThingToBuild =			"kus_researchship_4",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		114,
@@ -248,7 +248,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_ResearchShip_5",
+		ThingToBuild =			"kus_researchship_5",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		115,
@@ -257,7 +257,7 @@ build =
 	},		
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Probe",
+		ThingToBuild =			"kus_probe",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		140,
@@ -266,7 +266,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_ProximitySensor",
+		ThingToBuild =			"kus_proximitysensor",
 		RequiredResearch =		"ProximitySensor",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		141,
@@ -275,7 +275,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_SensorArray",
+		ThingToBuild =			"kus_sensorarray",
 		RequiredResearch =		"SensorArray",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		142,
@@ -284,7 +284,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_GravWellGenerator",
+		ThingToBuild =			"kus_gravwellgenerator",
 		RequiredResearch =		"GravityGenerator",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		143,
@@ -293,7 +293,7 @@ build =
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_CloakGenerator",
+		ThingToBuild =			"kus_cloakgenerator",
 		RequiredResearch =		"CloakGenerator",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		144,
@@ -303,101 +303,102 @@ build =
 --Drones
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone0",
+		ThingToBuild =			"kus_drone0",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone1",
+		ThingToBuild =			"kus_drone1",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone2",
+		ThingToBuild =			"kus_drone2",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone3",
+		ThingToBuild =			"kus_drone3",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone4",
+		ThingToBuild =			"kus_drone4",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone5",
+		ThingToBuild =			"kus_drone5",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone6",
+		ThingToBuild =			"kus_drone6",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone7",
+		ThingToBuild =			"kus_drone7",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone8",
+		ThingToBuild =			"kus_drone8",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone9",
+		ThingToBuild =			"kus_drone9",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone10",
+		ThingToBuild =			"kus_drone10",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone11",
+		ThingToBuild =			"kus_drone11",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone12",
+		ThingToBuild =			"kus_drone12",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},
 	{
 		Type =					Ship,
-		ThingToBuild =			"Kus_Drone13",
+		ThingToBuild =			"kus_drone13",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,		
 	},	
 }
 
+doscanpath("data:scripts", "applybuildtimes.lua")
