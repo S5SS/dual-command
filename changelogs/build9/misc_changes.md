@@ -17,5 +17,5 @@
 
 ## New Tactical Overlay Setting
 > *There are even more verbose settings for the tactical overlay that are not normally accessible.*
-* **Added 4th tactical overlay setting which shows the maximum amount of imformation**
+* **Added 4th tactical overlay setting which shows the maximum amount of information**
 * **Added setting under the gameplay tab to set the default tactical overlay setting on startup**
