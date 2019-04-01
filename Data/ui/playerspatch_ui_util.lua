@@ -62,6 +62,16 @@ function GetDefaultToSetting()
 	return DefaultToSetting
 end
 
+function GetProductionTimeInfoSetting()
+	ProductionTimeInfoSetting = GetOptionValueUI("PlayersPatch_ProductionTimeInfoSetting")
+
+	if ProductionTimeInfoSetting < 1 or ProductionTimeInfoSetting > 4 then
+		ProductionTimeInfoSetting = 1
+	end
+
+	return ProductionTimeInfoSetting
+end
+
 function GetOptionValueUI(OptionName)
 
 	--Load expanded options

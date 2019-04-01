@@ -59,6 +59,11 @@ Anchor_Options = {
 		defScale = 2.0,
 		saveOptions = "scale",
 	},
+	{
+		anchorName = "PlayersPatch_ProductionTimeInfoSetting",
+		defScale = 1.0,
+		saveOptions = "scale",
+	},
 	
 	{
 		andThenAnother = "yup",
