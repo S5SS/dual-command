@@ -8,7 +8,7 @@
 ## Build and Research Times
 > *Currently you have no way to know how long a unit or piece of research will take to complete.*
 * **Build and research times have been added to the build and research menus.**
-* **This option is off by default, to turn it on change the option in the gameplay settings tab.**
+* **This option is off by default, to turn it on change the option under the UI settings tab.**
 
 ## Tweaked Score Totals
 > *The combat total is calculated as such: `ShipbuiltRU + ShipsCapturedRU + ShipsDestroyedRU - ShipslostRU` which is how you can get a good combat score without doing any combat.*
@@ -18,4 +18,4 @@
 ## New Tactical Overlay Setting
 > *There are even more verbose settings for the tactical overlay that are not normally accessible.*
 * **Added 4th tactical overlay setting which shows the maximum amount of information**
-* **Added setting under the gameplay tab to set the default tactical overlay setting on startup**
+* **Added setting under the UI tab to set the default tactical overlay setting on startup**
