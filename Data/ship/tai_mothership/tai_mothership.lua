@@ -1,3 +1,5 @@
+dofilepath("data:scripts/ult_hw1productiontell.lua")
+
 function Load_Tai_Mothership(playerIndex)	
 	SobGroup_CreateIfNotExist("tai_mothership"..playerIndex)
 	SobGroup_CreateIfNotExist("tai_production"..playerIndex)	
@@ -35,6 +37,8 @@ function Update_Tai_Mothership(CustomGroup, playerIndex, shipID)
 			SobGroup_UnRestrictBuildOption("tai_production"..playerIndex, res_ship_name)
 		end
 	end
+
+	Ult_BuildNecessaryProductionTells(CustomGroup, playerIndex)
 end
 
 function Destroy_Tai_Mothership(CustomGroup, playerIndex, shipID)	
