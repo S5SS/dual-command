@@ -8,9 +8,9 @@ if GetProductionTimeInfoSetting() == 2 or GetProductionTimeInfoSetting() == 4 th
 			loc = localization[e.DisplayedName]
 			buildtime = buildtimes[e.ThingToBuild]
 			if loc and buildtime then
-				build[i].DisplayedName = loc .. "  <c=888>" .. buildtime .. "s"
+				-- The color code at the end is for the build menu to reset the color of the units queued
+				build[i].DisplayedName = loc .. "  <c=888>" .. buildtime .. "s<c=fff>"
 			end
 		end
 	end
 end
-
