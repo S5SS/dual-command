@@ -2,6 +2,44 @@ Ship = 0
 SubSystem = 1
 build =
 {
+--Research Tells---------------
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hw1_fightertell",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		0,
+		DisplayedName =			"$7000",
+		Description =			"$7001"
+	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hw1_corvettetell",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		0,
+		DisplayedName =			"$7002",
+		Description =			"$7003"
+	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hw1_frigatetell",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		0,
+		DisplayedName =			"$7004",
+		Description =			"$7005"
+	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hw1_capitaltell",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		0,
+		DisplayedName =			"$7006",
+		Description =			"$7007"
+	},
+
 --Fighters---------------
 	{
 		Type =					Ship,
