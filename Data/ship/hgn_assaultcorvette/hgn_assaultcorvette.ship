@@ -183,3 +183,5 @@ NewShipType.hideNormalAttackUICooldown=1
 NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
+
+addCustomCode(NewShipType, "data:ship/hgn_assaultcorvette/hgn_assaultcorvette.lua", "", "", "Update_Hgn_Assault_Corvette", "", "hgn_assaultcorvette", 1);

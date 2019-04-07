@@ -183,3 +183,5 @@ NewShipType.radiusDamageEvadeMod=1.1
 NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
+
+addCustomCode(NewShipType, "data:ship/vgr_lasercorvette/vgr_lasercorvette.lua", "", "", "Update_Vgr_Laser_Corvette", "", "vgr_lasercorvette", 1);
