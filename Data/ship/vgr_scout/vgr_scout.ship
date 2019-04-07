@@ -189,3 +189,5 @@ NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.strikeGroupSpeed=5000
 NewShipType.canSurround=0
+
+addCustomCode(NewShipType, "data:ship/vgr_scout/vgr_scout.lua", "", "", "Update_Vgr_Scout", "", "vgr_scout", 1);
