@@ -156,7 +156,7 @@ addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 -- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:Scripts/No_Salvage_Scuttle.lua","","","Update_No_Salvage_Scuttle","","tai_heavycruiser",4)
+addCustomCode(NewShipType,"data:Scripts/PlayersPatch_Patches.lua","","","Update_NoSalvageScuttle","","tai_heavycruiser",4)
 -- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun0","Hardpoint_Gun0","Weapon","Innate","Ship","Tai_CruiserGun1","","","","","","","","");

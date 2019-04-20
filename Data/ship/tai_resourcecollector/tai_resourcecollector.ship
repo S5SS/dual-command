@@ -145,7 +145,7 @@ addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 -- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:Scripts/No_Salvage_Scuttle.lua","","","Update_No_Salvage_Scuttle","","tai_resourcecollector",4)
+addCustomCode(NewShipType,"data:Scripts/PlayersPatch_Patches.lua","","","Update_NoSalvageScuttle","","tai_resourcecollector",4)
 -- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",225,20);
