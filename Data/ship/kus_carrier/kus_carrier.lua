@@ -1,3 +1,5 @@
+dofilepath("data:scripts/ult_hw1productiontell.lua")
+
 function Load_Kus_Carrier(playerIndex)
 	SobGroup_CreateIfNotExist("kus_carrier"..playerIndex)
 	SobGroup_CreateIfNotExist("kus_production"..playerIndex)
@@ -37,6 +39,8 @@ function Update_Kus_Carrier(CustomGroup, playerIndex, shipID)
 			SobGroup_UnRestrictBuildOption("kus_production"..playerIndex, res_ship_name)
 		end
 	end
+
+	Ult_BuildNecessaryProductionTells(CustomGroup, playerIndex)
 end
 
 function Destroy_Kus_Carrier(CustomGroup, playerIndex, shipID)	
