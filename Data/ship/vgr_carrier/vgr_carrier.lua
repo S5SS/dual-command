@@ -1,3 +1,5 @@
+dofilepath("data:scripts/playerspatch_patches.lua")
+
 function Create_Vgr_Carrier(CustomGroup, playerIndex, shipID)
 	if Player_GetNumberOfSquadronsOfTypeAwakeOrSleeping(playerIndex, "vgr_mothership") == 0 then
 		if playerIndex == Universe_CurrentPlayer() then
@@ -10,5 +12,9 @@ function Update_Vgr_Carrier(CustomGroup, playerIndex, shipID)
 	--SobGroup_CreateIfNotExist("vgr_carrier"..playerIndex)
 	--SobGroup_Clear("vgr_carrier"..playerIndex)
 	--SobGroup_SobGroupAdd("vgr_carrier"..playerIndex, CustomGroup)
-	SobGroup_AbilityActivate(CustomGroup, AB_Scuttle, 1 - SobGroup_IsDoingAbility(CustomGroup, AB_Dock))
+	Update_NoSalvageScuttleHyperspaceInhibitor(CustomGroup, playerIndex, shipID)
+end
+
+function Delete_Vgr_Carrier(CustomGroup, playerIndex, shipID)
+	Delete_HyperspaceInhibitor(CustomGroup, playerIndex, shipID)
 end
