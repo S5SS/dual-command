@@ -192,4 +192,4 @@ NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.canSurround=0
 
-addCustomCode(NewShipType, "data:ship/hgn_attackbomber/hgn_attackbomber.lua", "", "", "Update_Hgn_AttackBomber", "", "hgn_attackbomber", 1);
+addCustomCode(NewShipType, "data:ship/hgn_attackbomber/hgn_attackbomber.lua", "", "", "Update_Hgn_AttackBomber", "", "hgn_attackbomber", 0.5);

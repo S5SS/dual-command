@@ -191,4 +191,4 @@ NewShipType.homingDelay=0.5
 NewShipType.strikeGroupSpeed=5000
 NewShipType.canSurround=0
 
-addCustomCode(NewShipType, "data:ship/hgn_scout/hgn_scout.lua", "", "", "Update_Hgn_Scout", "", "hgn_scout", 1);
+addCustomCode(NewShipType, "data:ship/hgn_scout/hgn_scout.lua", "", "", "Update_Hgn_Scout", "", "hgn_scout", 0.5);
