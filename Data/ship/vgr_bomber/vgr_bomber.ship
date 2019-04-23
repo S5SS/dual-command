@@ -197,4 +197,4 @@ NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.canSurround=0
 
-addCustomCode(NewShipType, "data:ship/vgr_bomber/vgr_bomber.lua", "", "", "Update_Vgr_Bomber", "", "vgr_bomber", 1);
+addCustomCode(NewShipType, "data:ship/vgr_bomber/vgr_bomber.lua", "", "", "Update_Vgr_Bomber", "", "vgr_bomber", 0.5);

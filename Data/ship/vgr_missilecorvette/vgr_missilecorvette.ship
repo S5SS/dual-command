@@ -184,4 +184,4 @@ NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 
-addCustomCode(NewShipType, "data:ship/vgr_missilecorvette/vgr_missilecorvette.lua", "", "", "Update_Vgr_Missile_Corvette", "", "vgr_missilecorvette", 1);
+addCustomCode(NewShipType, "data:ship/vgr_missilecorvette/vgr_missilecorvette.lua", "", "", "Update_Vgr_Missile_Corvette", "", "vgr_missilecorvette", 0.5);
