@@ -5,3 +5,11 @@
 * **Production ships now display modules if that technology has been researched:**
   * `tai_mothership.ship`
   * `tai_carrier.ship`
+
+---
+
+## Missile Destroyer
+> *A little overtuned. Perhaps this ability will be revisited again soon - right now its made the MDD into an all-killing monster of a unit.*
+* **Missile burst ability damage down:**
+  * **multiplier vs frigates:** `5.0 => 3.0`
+  * **multiplier vs capitals:** `7.0 => 6.0`
