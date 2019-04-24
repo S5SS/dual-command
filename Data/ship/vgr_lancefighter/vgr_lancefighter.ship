@@ -187,3 +187,5 @@ NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.canSurround=0
+
+addCustomCode(NewShipType, "data:ship/vgr_lancefighter/vgr_lancefighter.lua", "", "", "Update_Vgr_Lance_Fighter", "", "vgr_lancefighter", 0.5);
