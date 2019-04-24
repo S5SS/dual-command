@@ -325,7 +325,7 @@ FE_UI_SHOWTIME = {
 					textStyle = "FEListBoxItemTextStyle",
 					text = "Off",
 				},
-				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeInfoSetting', 1.0, 1)";
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 1.0, 1)";
 			},
 			-- 2
 			{
@@ -336,7 +336,7 @@ FE_UI_SHOWTIME = {
 					textStyle = "FEListBoxItemTextStyle",
 					text = "Build Only",
 				},	
-				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeInfoSetting', 2.0, 1)";
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 2.0, 1)";
 			},
 			-- 3
 			{
@@ -347,7 +347,7 @@ FE_UI_SHOWTIME = {
 					textStyle = "FEListBoxItemTextStyle",
 					text = "Research Only",
 				},	
-				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeInfoSetting', 3.0, 1)";
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 3.0, 1)";
 			},
 			-- 4
 			{
@@ -358,7 +358,7 @@ FE_UI_SHOWTIME = {
 					textStyle = "FEListBoxItemTextStyle",
 					text = "Build & Research",
 				},	
-				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeInfoSetting', 4.0, 1)";
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 4.0, 1)";
 			},
 		},
 		helpTipTextLabel = "helpTip",

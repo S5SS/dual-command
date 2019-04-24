@@ -13,3 +13,7 @@
 * **Missile burst ability damage down:**
   * **multiplier vs frigates:** `5.0 => 3.0`
   * **multiplier vs capitals:** `7.0 => 6.0`
+  
+## Salvage Corvette
+> *Using right click for salvaging was bugged for Taiidan*
+* **Fixed right click action for salvage corvette**
