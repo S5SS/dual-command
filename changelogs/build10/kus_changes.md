@@ -5,3 +5,14 @@
 * **Production ships now display modules if that technology has been researched**
   * `kus_mothership.ship`
   * `kus_carrier.ship`
+
+---
+
+## Cloaked Fighters
+>*Still a never-seen unit (for the wrong reasons). Kushan struggles to justify its existence in multiplayer games and has no real advantage over taii field technology.*
+* **Out-of-combat regen added:** `0.75 HP/s` // Regenerates from 0 to max in 3 minutes. Being 'out-of-combat' takes 5 seconds of no damage taken.
+  *  **Glow effect added to regenerating fighters**
+* **Research cost down:** `1000 => 825`
+* **Research time down:** `80 => 70`
+* **Build cost down:** `120 => 110`
+* **Build time down:** `12 => 10`
