@@ -181,3 +181,5 @@ NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.canSurround=0
+
+addCustomCode(NewShipType, "data:ship/kus_cloakedfighter/kus_cloakedfighter.lua", "", "", "Update_Kus_CloakedFighter", "Destroy_Kus_CloakedFighter", "kus_cloakedfighter", 0.5)
