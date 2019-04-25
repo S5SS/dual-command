@@ -92,7 +92,7 @@ end
 -- tech exposure (2.4) [Fear]
 -- called infrequently, don't care about not running this code if its redundant
 function PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
-	if Player_HasResearch(playerIndex, "FighterChassis") == 1 or Player_HasResearch(playerIndex, "DefenderSubSystems") then -- int/bomber tech, defender tech
+	if Player_HasResearch(playerIndex, "FighterChassis") == 1 or Player_HasResearch(playerIndex, "DefenderSubSystems") == 1 then -- int/bomber tech, defender tech
 		SobGroup_CreateSubSystem(CustomGroup, "FighterProduction")
 	end
 	if Player_HasResearch(playerIndex, "CorvetteDrive") == 1 then -- light vettes

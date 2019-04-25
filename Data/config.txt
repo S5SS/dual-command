@@ -48,18 +48,15 @@ Dual command mode allows one player to control two players worth of units. You w
 [h1]To Enable Dual Command[/h1]
 - Change your race to a 2X version of the race
 - Add a CPU and put it in the slot you would like to have as your second main
-- Set the CPUs race to the same race as you (must be 2X)
-- Enable the Dual Command option
-- Set the Dual Command Player Slot to the slot of the player who will dual command
-- Set the Dual Command Slave Slot to the slot of the CPU you just added
+- Set the CPU's race to the same race as you (must be 2X)
 
 [h1]Notes[/h1]
 - The CPU's units will be given to you at the start of the game so make sure it is the same race as you (must be 2X)
-If they are not the same race you will not be able to build from their production
+- If they are not the same race you will not be able to build from their production
 
 [h1]2.1 Bug Fixes[/h1]
-- Fixed being able to scuttle units being salvaged while on their way into the mothership.
-- Fixed bugs relating to docking HW2 units in HW1 repair bays.
-- Fixed bugs relating to the disparity between HW1 and HW2 swarm performance.
-- Fixed missing/bugged voice lines.
-- And various other fixes across the board.
+- Fixed being able to scuttle units being salvaged while on their way into the mothership
+- Fixed bugs relating to docking HW2 units in HW1 repair bays
+- Fixed bugs relating to the disparity between HW1 and HW2 swarm performance
+- Fixed missing/bugged voice lines
+- And various other fixes across the board

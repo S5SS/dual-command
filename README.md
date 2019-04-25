@@ -20,11 +20,8 @@ Dual Command Mode allows one player to control two players worth of units. You w
 ## To Enable Dual Command
 - Change your race to a 2X version of the race
 - Add a CPU and put it in the slot you would like to have as your second main
-- Set the CPUs race to the same race as you (must be 2X)
-- Enable the Dual Command option
-- Set the Dual Command Player Slot to the slot of the player who will dual command
-- Set the Dual Command Slave Slot to the slot of the CPU you just added
+- Set the CPU's race to the same race as you (must be 2X)
 
 ## Notes
 - The CPU's units will be given to you at the start of the game so make sure it is the same race as you (must be 2X)
-If they are not the same race you will not be able to build from their production
+- If they are not the same race you will not be able to build from their production

@@ -30,3 +30,9 @@
 ## Friendly Fire
 > *Friendly fire from bombers and other units can hit squad members, potentially killing them*
 * **Friendly fire reduced back to 2.1 amount** `100% => 50%`
+
+## Dual Command
+> *Dual command is currently fiddly to setup and easy to make a mistake with so these changes aim to make things simpler*
+* **Removed option to enable/disable dual command along with the master and slave selectors**
+* **To use dual command simply give a human player a 2X race and an AI player a 2X race - the AI will automatically become the slave**
+* **Note however that you can still only have one dual commander per match**
