@@ -10,7 +10,7 @@
 // Steam Workshop.  The description text is limited to 8,000 characters total in length.
 
 // title of the MOD that appears on the Steam Workshop (limited to 128 characters)
-Title: Dual Command Mode
+Title: 2.4 Players Patch (Dual Command Mode)
 
 // tags must be individual words separated by spaces.
 Tags: homeworld ship space deathmatch multiplayer
