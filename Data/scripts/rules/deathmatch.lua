@@ -79,58 +79,6 @@ GameSetupOptions =
             "$3227", "fixed",
         },
     },
-	--2.4
-		{
-        name = "dualcommand",
-        locName = "Dual Command",
-        tooltip = "COMMAND TWO PLAYERS FORCES AT ONCE",
-        default = 0,
-        visible = 1,
-        choices =
-        {
-            "Disabled", "0",
-			"Enabled", "1",
-        },
-    },
-	
-		{
-        name = "dualcommand_master",
-        locName = "Dual Command Player Slot",
-        tooltip = "THE SLOT NUMBER OF THE <b>COMMANDING PLAYER</b>",
-        default = 0,
-        visible = 1,
-        choices =
-        {
-            "1", "0",
-			"2", "1",
-			"3", "2",
-			"4", "3",
-			"5", "4",
-			"6", "5",
-			"7", "6",
-			"8", "7",
-        },
-    },
-	
-		{
-        name = "dualcommand_slave",
-        locName = "Dual Command Slave Slot",
-        tooltip = "THE SLOT NUMBER OF THE <b>COMMANDED PLAYER</b> (MAKE THIS A CPU)",
-        default = 0,
-        visible = 1,
-        choices =
-        {
-            "1", "0",
-			"2", "1",
-			"3", "2",
-			"4", "3",
-			"5", "4",
-			"6", "5",
-			"7", "6",
-			"8", "7",
-        },
-    },
-	-- 2.4
     {
         name = "cpuplayers",
         locName = "$2984",

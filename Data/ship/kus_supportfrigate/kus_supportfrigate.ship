@@ -165,7 +165,7 @@ addAbility(NewShipType,"RepairCommand",1,440,1,1,"Frontal_SupportFrigate",
 {Mothership="frontal_RepairFrigate_Mothership"});
 addAbility(NewShipType,"RetireAbility",1,1);
 -- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:Scripts/PlayersPatch_Patches.lua","","","Update_NoSalvageScuttle","","kus_supportfrigate",4)
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","kus_supportfrigate",4)
 -- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun0","Hardpoint_Gun0","Weapon","Innate","Ship","Kus_SupportGun","","","","","","","","");

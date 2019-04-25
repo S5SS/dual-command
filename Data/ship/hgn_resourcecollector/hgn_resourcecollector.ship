@@ -150,7 +150,7 @@ addAbility(NewShipType,"RepairCommand",0,500,14,0,"",{SuperCap="21"},{Flagship="
 addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"CanBeSalvageCaptured",0,0.75,0,1,1,"SalCap");
 -- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:Scripts/PlayersPatch_Patches.lua","","","Update_NoSalvageScuttle","","Hgn_ResourceCollector",4)
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","Hgn_ResourceCollector",4)
 -- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",75,20);

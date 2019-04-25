@@ -149,7 +149,7 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 -- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:Scripts/PlayersPatch_Patches.lua","","","Update_NoSalvageScuttle","","vgr_resourcecontroller",4)
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","vgr_resourcecontroller",4)
 -- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense1","");

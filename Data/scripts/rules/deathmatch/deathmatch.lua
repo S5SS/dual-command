@@ -39,9 +39,6 @@ function OnInit()
 	-- 2.4
 	nominelayers = GetGameSettingAsNumber("nominelayers")
 	noplatforms = GetGameSettingAsNumber("noplatforms")
-	dualcommand = GetGameSettingAsNumber("dualcommand")
-	dualcommand_master = GetGameSettingAsNumber("dualcommand_master")
-	dualcommand_slave = GetGameSettingAsNumber("dualcommand_slave")
 	-- 2.4
 	
     cpuplayers = GetGameSettingAsNumber("cpuplayers")
@@ -109,10 +106,8 @@ function timer_updating()
 				end	
 				if noplatforms == 1 then
 						Rule_AddInterval("noplatforms_init",1.0)
-				end	
-				if dualcommand == 1 then
-						Rule_AddInterval("dualcommand_init",0.0)
-				end	
+				end
+				Rule_AddInterval("dualcommand_init",0.0)
 				-- 2.4
 						
 				if research == 0 then

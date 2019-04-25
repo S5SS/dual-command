@@ -209,4 +209,4 @@ NewShipType.canSurround=1
 NewShipType.canRetireSubSystems=1
 
 NewShipType.alternativeHyperspaceTime = 6
-addCustomCode(NewShipType,"data:Scripts/PlayersPatch_Patches.lua","","","Update_HyperspaceInhibitor","Destroy_HyperspaceInhibitor","Hgn_Shipyard",1)
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_HyperspaceInhibitor","Destroy_HyperspaceInhibitor","Hgn_Shipyard",1)

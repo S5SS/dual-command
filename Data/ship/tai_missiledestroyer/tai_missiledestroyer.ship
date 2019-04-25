@@ -159,7 +159,7 @@ addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType, "SpecialAttack", 1, "MissileVolley")
 NewShipType.noCombatGrouping=1
 -- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:Scripts/PlayersPatch_Patches.lua","","","Update_NoSalvageScuttle","","tai_missiledestroyer",4)
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","tai_missiledestroyer",4)
 -- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_DestroyerLauncher","Weapon_Gun0","Weapon_Gun0");

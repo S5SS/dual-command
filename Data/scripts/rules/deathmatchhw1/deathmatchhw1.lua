@@ -36,9 +36,6 @@ function OnInit()
 	
 	-- 2.4
 	nominelayers = GetGameSettingAsNumber("nominelayers")
-	dualcommand = GetGameSettingAsNumber("dualcommand")
-	dualcommand_master = GetGameSettingAsNumber("dualcommand_master")
-	dualcommand_slave = GetGameSettingAsNumber("dualcommand_slave")
 	-- 2.4
 	
     PlayersPatch_AIAttackDamage = GetGameSettingAsNumber("PlayersPatch_AIAttackDamage")
@@ -93,11 +90,9 @@ function timer_updating()
 				
 				-- 2.4
 				if nominelayers == 1 then
-						Rule_AddInterval("nominelayers_init",1.0)
+					Rule_AddInterval("nominelayers_init",1.0)
 				end	
-				if dualcommand == 1 then
-						Rule_AddInterval("dualcommand_init",0.0)
-				end	
+				Rule_AddInterval("dualcommand_init",0.0)
 				-- 2.4
 				
 				if research == 0 then
