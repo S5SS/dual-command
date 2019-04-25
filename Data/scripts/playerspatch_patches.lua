@@ -75,3 +75,32 @@ function inhibitHyperspaceGlobal()
 	SobGroup_AbilityActivate("inhibitedUnits", AB_Hyperspace, 0)
 	SobGroup_AbilityActivate("uninhibitedUnits", AB_Hyperspace, 1)
 end
+
+function PlayersPatch_UnderAttackReissueDock(group)
+    if (SobGroup_GetCurrentOrder(group) == COMMAND_Dock) then -- docking
+        if (SobGroup_UnderAttack(group)) then -- under attack
+            if (SobGroup_Count(group) < SobGroup_GetStaticF(group, "buildBatch")) then -- lost one or more members
+                if (SobGroup_GetActualSpeed(group) < 50) then -- probably bugged into stopping - could get unlucky here and catch a pivoting squad
+                    SobGroup_DockSobGroupWithAny(group)
+                end
+            end
+        end
+    end
+end
+
+-- tech exposure (2.4) [Fear]
+-- called infrequently, don't care about not running this code if its redundant
+function PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
+	if (Player_HasResearch(playerIndex, "FighterChassis") == 1 || Player_HasResearch(playerIndex, "DefenderSubSystems")) then -- int/bomber tech, defender tech
+		SobGroup_CreateSubSystem(CustomGroup, "FighterProduction")
+	end
+	if (Player_HasResearch(playerIndex, "CorvetteDrive") == 1) then -- light vettes
+		SobGroup_CreateSubSystem(CustomGroup, "CorvetteProduction")
+	end
+	if (Player_HasResearch(playerIndex, "CapitalShipDrive") == 1) then -- supp frigates
+		SobGroup_CreateSubSystem(CustomGroup, "FrigateProduction")
+	end
+	if (Player_HasResearch(playerIndex, "SuperCapitalShipDrive") == 1) then -- carriers
+		SobGroup_CreateSubSystem(CustomGroup, "CapShipProduction")
+	end
+end

@@ -1,4 +1,4 @@
-dofilepath("data:scripts/ult_hw1productiontell.lua")
+dofilepath("data:scripts/playerspatch_patches.lua")
 
 function Load_Kus_Mothership(playerIndex)	
 	SobGroup_CreateIfNotExist("kus_mothership"..playerIndex)
@@ -54,7 +54,7 @@ function Update_Kus_Mothership(CustomGroup, playerIndex, shipID)
 		SobGroup_AbilityActivate(CustomGroup, AB_Dock, 1)	
 	end
 
-	Ult_BuildNecessaryProductionTells(CustomGroup, playerIndex)
+	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
 end
 
 function Destroy_Kus_Mothership(CustomGroup, playerIndex, shipID)	

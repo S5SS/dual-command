@@ -1,4 +1,4 @@
-dofilepath("data:scripts/ult_hw1productiontell.lua")
+dofilepath("data:scripts/playerspatch_patches.lua")
 
 function Load_Tai_Carrier(playerIndex)    
 	SobGroup_CreateIfNotExist("tai_carrier"..playerIndex)
@@ -40,7 +40,7 @@ function Update_Tai_Carrier(CustomGroup, playerIndex, shipID)
 		end
 	end
 
-	Ult_BuildNecessaryProductionTells(CustomGroup, playerIndex)
+	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
 end
 
 function Destroy_Tai_Carrier(CustomGroup, playerIndex, shipID)	  

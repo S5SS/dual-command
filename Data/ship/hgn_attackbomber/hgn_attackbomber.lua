@@ -1,5 +1,5 @@
-dofilepath("data:scripts/ult_underattackreissuedock.lua")
+dofilepath("data:scripts/playerspatch_patches.lua")
 
 function Update_Hgn_AttackBomber(CustomGroup, playerIndex, shipID)
-    Ult_UnderAttackReissueDock(CustomGroup)
+    PlayersPatch_UnderAttackReissueDock(CustomGroup)
 end

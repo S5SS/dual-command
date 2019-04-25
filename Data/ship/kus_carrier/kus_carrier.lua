@@ -1,4 +1,4 @@
-dofilepath("data:scripts/ult_hw1productiontell.lua")
+dofilepath("data:scripts/playerspatch_patches.lua")
 
 function Load_Kus_Carrier(playerIndex)
 	SobGroup_CreateIfNotExist("kus_carrier"..playerIndex)
@@ -40,7 +40,7 @@ function Update_Kus_Carrier(CustomGroup, playerIndex, shipID)
 		end
 	end
 
-	Ult_BuildNecessaryProductionTells(CustomGroup, playerIndex)
+	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
 end
 
 function Destroy_Kus_Carrier(CustomGroup, playerIndex, shipID)	
