@@ -85,27 +85,6 @@ function raceHelper()
 	end
 end
 
--- Race IDs (probably not needed but here just in case)
-Race_ID =
-{
-	"Hiigaran",
-	"Hiigaran_2X",
-	"Vaygr",
-	"Vaygr_2X",
-	"Keeper",
-	"Bentusi",
-	"Kushan",
-	"Kushan_2X",
-	"Taiidan",
-	"Taiidan_2X",
-	"Turanic Raiders",
-	"Kadeshi",
-	"P3",
-	"Observer",
-	"RandomHW1",
-	"RandomHW2",
-	"Random",
-}
 bRaceID = nil
 
 -- Race IDs (old)

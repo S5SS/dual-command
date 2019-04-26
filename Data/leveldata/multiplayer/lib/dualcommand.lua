@@ -1,8 +1,8 @@
+dofilepath("player:racelist.lua")
+
 function isRace2x(raceId)
-	return raceId == 2 or -- Hiigaran_2X
-	       raceId == 4 or -- Vaygr_2X
-	       raceId == 6 or -- Kushan_2X
-	       raceId == 8    -- Taiidan_2X
+	races = { Hiigaran_2X = 1, Vaygr_2X = 1, Kushan_2X = 1, Taiidan_2X = 1 }
+	return races[Race_ID[raceId]]
 end
 
 function dualcommand_init()
