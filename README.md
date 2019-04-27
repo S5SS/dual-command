@@ -1,4 +1,4 @@
-# 2.4 Players Patch (Dual Command Mode)
+# 2.4 Competitors Patch (Dual Command Mode)
 Dual Command Mode is a mod for Homeworld Remastered 2.1 which allows you to control two fleets at once in a multiplayer/skirmish match to make up for an odd number of players. This mod also features balance changes and bug fixes.
 
 ## Description
