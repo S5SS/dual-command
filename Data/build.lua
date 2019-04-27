@@ -1,2 +1,2 @@
-modName = "v2.4 Players Patch"
-modBuild = 10
+modName = "v2.4 Competitors Patch"
+modBuild = "10"
