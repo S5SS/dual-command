@@ -23,7 +23,7 @@ ModType: MOD
 
 // bigfilename is the file name you want to use for your .big file (this should be a single word with no spaces).
 // for ModType 'Locale' this MUST match the name of the language in the 'locale' folder of your Locale MOD.
-BigFilename: dualcommand.big
+BigFilename: competitorspatch.big
 
 // WorkshopID is the Steam Workshop item number assigned to this item when you first create it.
 // This should be 0 by default before you create your Workshop item and the Workshop Tool will
