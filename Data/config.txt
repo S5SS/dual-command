@@ -1,0 +1,58 @@
+// Example config file for Homeworld Remastered and Homeworld Classic Workshop MODs
+
+// This is a comment line.  Any line that begins with 2 forward slashes is ignored.
+// Config items consist of a keyword followed by a colon followed by data specifically
+// for that keyword.  For example: "Title: My First Homeworld MOD".  Data for a keyword
+// must appear on the same line as the keyword.  The only exception to this rule is the
+// "Description:" keyword which must appear on a line by itself followed by lines of text
+// that will be used as the description of the item in the Steam Workshop.  All text that
+// appears after the "Description:" keyword will become part of the item description on
+// Steam Workshop.  The description text is limited to 8,000 characters total in length.
+
+// title of the MOD that appears on the Steam Workshop (limited to 128 characters)
+Title: Dual Command Mode
+
+// tags must be individual words separated by spaces.
+Tags: homeworld ship space deathmatch multiplayer
+
+// gametype is the type of game this MOD is designed for and can be any of: "HW1Classic", "HW2Classic", or "HomeworldRM" (without the double quotes) separated by spaces
+GameType: HomeworldRM
+
+// modtype is the type of mod for the game and can be any one of: "MOD", "Locale", "Badges", or "Cursors"
+ModType: MOD
+
+// bigfilename is the file name you want to use for your .big file (this should be a single word with no spaces).
+// for ModType 'Locale' this MUST match the name of the language in the 'locale' folder of your Locale MOD.
+BigFilename: dualcommand.big
+
+// WorkshopID is the Steam Workshop item number assigned to this item when you first create it.
+// This should be 0 by default before you create your Workshop item and the Workshop Tool will
+// set it to the Workshop Item number.  DO NOT modify this number once you have created a Workshop
+// item.  It will be used to update the workshop item when you make changes to your MOD later on.  
+WorkshopID: 1509060723
+
+// description that will appear on the Steam Workshop for this item
+Description:
+Build 4:
+
+Adds extra deathmatch options:
+- Enable/Disable Minelayers
+- Enable/Disable Platforms
+- Enable Dual Command Mode
+
+[h1]Dual Command Mode[/h1]
+
+In multiplayer you will often end up with an odd number of players which means you either need to add AI, fight in uneven teams or FFA all of which are not always what you would like. 
+
+Dual command mode allows one player to control two players worth of units. You will start with two motherships, 2 carriers, double the usual starting RUs and Unit cap is also double what it usually is. Research cost is also doubled to ensure you pay the full price for two players worth of units.
+
+To Enable:
+- Change your race to a 2X version of the race
+- Add a CPU and put it in the slot you would like to have as your second main
+- Enable the Dual Command option
+- Set the Dual Command Player Slot to the slot of the player who will dual command
+- Set the Dual Command Slave Slot to the slot of the CPU you just added
+
+Notes:
+- The CPU's units will be given to you at the start of the game so make sure it is the same race as you (2X or not)
+If they are not the same race you will not be able to build from their production

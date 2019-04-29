@@ -254,30 +254,10 @@ NewMainMenu = {
 				},
 				
 				autosize = 1,
+				visible=1,
 				
 				Text = {	
-					text = "$1221",
-					font = "ButtonFont",
-					vAlign = "Top",
-					color = {119,166,191,255},
-				},
-			},
-			
-			-- Version number2
-			{
-				type = "TextLabel",
-				name = "lblVersion2",
-				
-				Layout = {
-					pos_XY = { x = 0.0, y = 0.0, xr = "px", yr = "px" },
-					size_WH = { w = 0.0, h = 0.0, wr = "px", hr = "px" },
-					pivot_XY = { 0.0, 0.0 },
-				},
-				
-				autosize = 1,
-				
-				Text = {	
-					text = " + v2.4 Players Patch | build " .. build,
+					text = "v2.1" .. " + " .. modName .. " | build " .. modBuild,
 					font = "ButtonFont",
 					vAlign = "Top",
 					color = {119,166,191,255},

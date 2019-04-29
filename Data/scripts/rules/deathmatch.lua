@@ -1,5 +1,5 @@
 GUID = { 110,91,157,190,18,23,250,78,144,20,41,246,181,128,214,12 }
-GameRulesName = "Homeworld Remastered v2.4" -- $4803 Homeworld Remastered
+GameRulesName = "Homeworld Remastered " .. "Dual Command"
 Description = "$4804"
 SaveGameVersion = 1.0
 SinglePlayer = 0
