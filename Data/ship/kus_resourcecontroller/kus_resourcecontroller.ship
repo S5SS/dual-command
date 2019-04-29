@@ -149,6 +149,9 @@ addAbility(NewShipType,"RetireAbility",1,1);
 --AddShipMultiplier(NewShipType, "ResourceDropOffRate", "OwnShipsWithinRadius", "Linear", 1.075, 1.075, 2000)
 ----AddShipMultiplier(NewShipType, "ResourceCapacity", "OwnShipsWithinRadius", "Linear", 1.075, 1.075, 2000)
 --AddShipMultiplier(NewShipType, "ResourceCollectionRate", "OwnShipsWithinRadius", "Linear", 1.075, 1.075, 2000)
+-- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:Scripts/No_Salvage_Scuttle.lua","","","Update_No_Salvage_Scuttle","","kus_resourcecontroller",4)
+-- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",220,20);
 NewShipType.battleScarCoverage=3

@@ -148,6 +148,9 @@ addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap"); 
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
+-- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:Scripts/No_Salvage_Scuttle.lua","","","Update_No_Salvage_Scuttle","","vgr_infiltratorfrigate",4)
+-- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Right","Hardpoint_Right","Weapon","Innate","Ship","Vgr_FlechetteCannonInfiltratorFrigate","","","","","","","","");
 StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncherFrigate","Weapon_HullDefense","Fire_Missile1");
