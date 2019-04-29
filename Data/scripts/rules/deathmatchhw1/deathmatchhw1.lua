@@ -19,7 +19,6 @@ dofilepath("data:leveldata/multiplayer/lib/nocruisers.lua")
 
 -- 2.4
 dofilepath("data:leveldata/multiplayer/lib/nominelayers.lua")
-dofilepath("data:leveldata/multiplayer/lib/noplatforms.lua")
 dofilepath("data:leveldata/multiplayer/lib/dualcommand.lua")
 -- 2.4
 
@@ -37,7 +36,6 @@ function OnInit()
 	
 	-- 2.4
 	nominelayers = GetGameSettingAsNumber("nominelayers")
-	noplatforms = GetGameSettingAsNumber("noplatforms")
 	dualcommand = GetGameSettingAsNumber("dualcommand")
 	dualcommand_master = GetGameSettingAsNumber("dualcommand_master")
 	dualcommand_slave = GetGameSettingAsNumber("dualcommand_slave")
@@ -48,27 +46,27 @@ function OnInit()
     research = GetGameSettingAsNumber("research")
     ruinjections = GetGameSettingAsNumber("ruinjections")
     challenges = GetGameSettingAsNumber("challenges")
-		relics = GetGameSettingAsNumber("relics")
+	relics = GetGameSettingAsNumber("relics")
     crates = GetGameSettingAsNumber("crates")
-		carriersonly = GetGameSettingAsNumber("carriersonly")
-		norushtime = GetGameSettingAsNumber("norushtime")
-		if carriersonly == 0 then
-			  SetStartFleetSuffix("") 	 		
-	  elseif carriersonly == 1 then
-		    SetStartFleetSuffix("carriersonly") 	
-				Rule_AddInterval("carriersonly_init",2)
-	  end
-		UI_SetElementEnabled("NewTaskbar", "btnObjectives", 0)
-		UI_SetElementEnabled("NewTaskbar", "btnRecall", 0)
-		UI_SetElementEnabled("NewTaskbar", "btnBuild", 0)
-		UI_SetElementEnabled("NewTaskbar", "btnResearch", 0)
-		UI_SetElementEnabled("NewTaskbar", "btnLaunch", 0)
+	carriersonly = GetGameSettingAsNumber("carriersonly")
+	norushtime = GetGameSettingAsNumber("norushtime")
+	if carriersonly == 0 then
+		SetStartFleetSuffix("") 	 		
+	elseif carriersonly == 1 then
+		SetStartFleetSuffix("carriersonly") 	
+		Rule_AddInterval("carriersonly_init",2)
+	end
+	UI_SetElementEnabled("NewTaskbar", "btnObjectives", 0)
+	UI_SetElementEnabled("NewTaskbar", "btnRecall", 0)
+	UI_SetElementEnabled("NewTaskbar", "btnBuild", 0)
+	UI_SetElementEnabled("NewTaskbar", "btnResearch", 0)
+	UI_SetElementEnabled("NewTaskbar", "btnLaunch", 0)
 
-		if norushtime > 0 then
-			UI_TimerStop("NewTaskbar", "GameTimer")	
-		end
+	if norushtime > 0 then
+		UI_TimerStop("NewTaskbar", "GameTimer")	
+	end
 
-		Rule_AddInterval("timer_updating",1.02)	--timed with doai	
+	Rule_AddInterval("timer_updating",1.02)	--timed with doai	
 end
 
 timer_timing = 1
@@ -96,9 +94,6 @@ function timer_updating()
 				-- 2.4
 				if nominelayers == 1 then
 						Rule_AddInterval("nominelayers_init",1.0)
-				end	
-				if noplatforms == 1 then
-						Rule_AddInterval("noplatforms_init",1.0)
 				end	
 				if dualcommand == 1 then
 						Rule_AddInterval("dualcommand_init",0.0)

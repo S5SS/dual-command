@@ -405,13 +405,13 @@ MineLayingInfo = {
 
 CollisionInfo = {
 	-- multiply this by each side of the collisions health to see what the other side takes as damage
-	kamikazeDamageMultiplier		= 12,
+	kamikazeDamageMultiplier		= 14,
 	-- multiply this by each side of the collisions health to see what the other side takes as damage
 	normalCollisionDamageMultiplier = 0,
 	kamikazeArmourFamilyDamageMultiplier = {
 		{
 			"ResArmour",
-			0.21,
+			0.10,
 		},
 		{
 			"MediumArmour",

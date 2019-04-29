@@ -11,6 +11,5 @@ function dualcommand_init()
 	
 	-- Give player double rus
 	Player_SetRU(dualcommand_master, Player_GetRU(dualcommand_master) * 2)
-	Rule_Remove("dualcommand_init")		
-	research = {}
+	Rule_Remove("dualcommand_init")
 end
