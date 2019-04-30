@@ -5,19 +5,27 @@ function isRace2x(raceId)
 	return races[Race_ID[raceId]]
 end
 
+function isRaceObserver(raceId)
+	return Race_ID[raceId] == "Observer"
+end
+
 function dualcommand_init()
 	master = nil
 	slave = nil
 	
 	-- Loop through players to find master and slave
 	for player=0,Universe_PlayerCount()-1 do
-		if isRace2x(Player_GetRace(player)) then
+		raceId = Player_GetRace(player)
+		if isRace2x(raceId) then
 			-- The master must be a player and the slave must be an AI
 			if Player_GetLevelOfDifficulty(player) > 0 then
 				slave = player
 			else
 				master = player
 			end
+		elseif isRaceObserver(raceId) then
+			-- Give observers no starting RUs
+			Player_SetRU(player, 0)
 		end
 	end
 	
