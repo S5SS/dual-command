@@ -164,3 +164,4 @@ NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.strikeGroupSpeed=5000
 NewShipType.canSurround=0
+NewShipType.alternativeHyperspaceTime=0.1
