@@ -48,7 +48,7 @@ String_Properties_Priority = 1.0
 
 String_Properties = {
 	cfg_hyperspace_effect_fx = "hyperspace_gate",
-	cfg_hyperspace_effect_audio = [[etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN]],
+	cfg_hyperspace_effect_audio = "",
 	
 	path_build = [[data:scripts/races/observer/scripts/def_build.lua]],
 	path_research = [[data:scripts/races/observer/scripts/def_research.lua]],
