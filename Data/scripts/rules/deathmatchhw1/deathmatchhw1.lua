@@ -92,7 +92,7 @@ function timer_updating()
 				if nominelayers == 1 then
 					Rule_AddInterval("nominelayers_init",1.0)
 				end	
-				Rule_AddInterval("dualcommand_init",0.0)
+				Rule_AddInterval("CompetitorsPatch_Init",0.0)
 				-- 2.4
 				
 				if research == 0 then

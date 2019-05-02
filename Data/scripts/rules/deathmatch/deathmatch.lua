@@ -107,7 +107,7 @@ function timer_updating()
 				if noplatforms == 1 then
 						Rule_AddInterval("noplatforms_init",1.0)
 				end
-				Rule_AddInterval("dualcommand_init",0.0)
+				Rule_AddInterval("CompetitorsPatch_Init",0.0)
 				-- 2.4
 						
 				if research == 0 then
