@@ -2,7 +2,7 @@
 
 ## Observer Race
 > *Being able to see the whole map while alive caused desyncs.*
-* **You can no longer see the whole map until you scuttle**
+* **You can no longer see the whole map until you scuttle** (To observe AI vs AI games play in a LAN game by yourself)
 
 ## Research Menu
 * **Upgrade research items show the statistic increase**
