@@ -35,30 +35,25 @@ WorkshopID: 1509060723
 Description:
 This mod is a multiplayer balance patch aimed at keeping the vanilla gameplay exactly the same as well as letting you control 2 fleets at once in a multiplayer/skirmish match to make up for an odd number of players.
 
-
-Main Features:
+[h1]Main Features[/h1]
 - Enable/Disable Minelayers
 - Enable/Disable Platforms
 - Enable/Disable Dual Command Mode
 - Observer/Spectator Race
 - Build and Research Times are Shown in Menus
 
-
 [h1]Description[/h1]
 In multiplayer you will often end up with an odd number of players which means you either need to add AI, fight in uneven teams or FFA all of which are not always what you would like. 
-Dual command mode allows one player to control two players worth of units. You will start with two motherships, 2 carriers, double the usual starting RUs and Unit cap is also double what it usually is. Research cost is also doubled to ensure you pay the full price for two players worth of units.
-
+Dual command mode allows one player to control two players worth of units. You will start with two Motherships, 2 carriers, double the usual starting RUs and Unit cap is also double what it usually is. Research cost is also doubled to ensure you pay the full price for two players worth of units.
 
 [h1]To Enable Dual Command[/h1]
 - Change your race to a 2X version of the race
 - Add a CPU and put it in the slot you would like to have as your second main
 - Set the CPU's race to the same race as you (must be 2X)
 
-
 [h1]Notes[/h1]
 - The CPU's units will be given to you at the start of the game so make sure it is the same race as you (must be 2X)
 - If they are not the same race you will not be able to build from their production
-
 
 [h1]2.1 Bug Fixes[/h1]
 - Fixed being able to scuttle units being salvaged while on their way into the Mothership

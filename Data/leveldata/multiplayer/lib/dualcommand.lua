@@ -52,11 +52,13 @@ function CompetitorsPatch_Init()
 end
 
 function CompetitorsPatch_Update()
-	if isRaceObserver(Player_GetRace(Universe_CurrentPlayer())) then
-		for player = 0, Universe_PlayerCount() - 1 do
-			FOW_RevealGroup("Player_Ships" .. player, 1)
-		end
-	end
+	-- Global vision causes desyncs with other human players
+	-- May be useful in AI games though
+	--if isRaceObserver(Player_GetRace(Universe_CurrentPlayer())) then
+	--	for player = 0, Universe_PlayerCount() - 1 do
+	--		FOW_RevealGroup("Player_Ships" .. player, 1)
+	--	end
+	--end
 	
 	-- Check if there are any enemy players that aren't observers
 	gameOver = 1
