@@ -15,9 +15,9 @@ NewShipType.formationSpacing = 1
 
 NewShipType.mass = 5
 NewShipType.collisionMultiplier = 2
-NewShipType.thrusterMaxSpeed = 210
-NewShipType.mainEngineMaxSpeed = 210
-NewShipType.rotationMaxSpeed = 230
+NewShipType.thrusterMaxSpeed = 500
+NewShipType.mainEngineMaxSpeed = 500
+NewShipType.rotationMaxSpeed = 400
 NewShipType.thrusterAccelTime = 0.6
 NewShipType.thrusterBrakeTime = 0.5
 NewShipType.mainEngineAccelTime = 0.6
