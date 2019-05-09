@@ -43,6 +43,7 @@ SubSystem = 9
 Platform = 10
 Megalith = 11
 Flagship = 12
+MISC_SILENT = 13
 
 -- Number of Actors per Actor type
 NumAllPilots = 5
@@ -155,6 +156,9 @@ function getType(shipnm)
 		return Platform
 	end	
 
+	if(familyName == "UNATTACKABLE") then
+		return MISC_SILENT
+	end
 	--print("*** GET TYPE unknown FamilyType: "..familyName.." for ship:"..shipnm)
 	
 	return 0
@@ -303,7 +307,7 @@ end
 
 function CommandAttackGiven(shipname, targetname, attackType)
 
-	print("******** COMMAND ATTACK: shipname, targetname, attackType = "..shipname..","..targetname..","..attackType)
+	--print("******** COMMAND ATTACK: shipname, targetname, attackType = "..shipname..","..targetname..","..attackType)
 	
 	-- if special_attack given
 	if (attackType == 3) then
@@ -328,7 +332,7 @@ function CommandAttackGiven(shipname, targetname, attackType)
 	genericShipName = strsub(shipname,5)
 	
 	
-	print("******2- COMMAND ATTACK: shipType, targetShipType, genericShipName = "..shipType..","..targetShipType..","..genericShipName)
+	--print("******2- COMMAND ATTACK: shipType, targetShipType, genericShipName = "..shipType..","..targetShipType..","..genericShipName)
 	
 	if (attackType == 0 or attackType == 3) then
 
@@ -384,7 +388,7 @@ HYP_NotEnoughCash = 6
 
 function CommandHyperspaceGiven(shipname,code)
 
-	print("** CommandHyperspaceGiven: shipname = "..shipname.." code = "..code)
+	--print("** CommandHyperspaceGiven: shipname = "..shipname.." code = "..code)
 	genericShipName = strsub(shipname,5)
 
 	--special case for intteruption (same priority)
@@ -441,13 +445,14 @@ function CommandCombatMan(shipname, targetname)
 	
 	if (shipType==Capital) then
 		playSpeechActor("COMMAND_CAP_COMBATMAN", NameCapPilot, NumCapPilots, Frequency_Command )
-	else
+	elseif (shipType ~= MISC_SILENT) then
 		playSpeechActor("COMMAND_COMBATMAN", NameFighterPilot, NumFighterPilots, Frequency_Command )
 	end
 
 end
 
 function CommandMoveAttackGiven(shipname, targetname)
+
 
 	shiptype = getType(shipname)
 	genericShipName = strsub(shipname,5)
@@ -459,7 +464,8 @@ function CommandMoveAttackGiven(shipname, targetname)
 	
 	if (shiptype==Capital) then
 		playSpeechActor("COMMAND_CAP_MOVEATTACK", NameCapPilot, NumCapPilots, Frequency_Command )
-	else
+	elseif (shiptype ~= MISC_SILENT) then
+		
 		playSpeechActor("COMMAND_MOVEATTACK", NameFighterPilot, NumFighterPilots, Frequency_Command )
 	end
 
@@ -959,7 +965,7 @@ BUILD_Subsystem = 2
 
 function CommandConstructionComplete(buildingShip, builtItem, buildType)
 
-	print("*****---- CommandConstructionComplete : buildingShip="..buildingShip..", builtItem="..builtItem..", buildType="..buildType)
+	--print("*****---- CommandConstructionComplete : buildingShip="..buildingShip..", builtItem="..builtItem..", buildType="..buildType)
 		
 	if (buildingShip==nil or builtItem==nil) then
 		return
