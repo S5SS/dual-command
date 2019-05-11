@@ -1,18 +1,17 @@
-name = "Dot"
-displayName = "Missile"
+name = "TriangleLeft"
+displayName = "Anti-Capital Fighter"
 mesh =
 {
     colour = {0,0,0,0},
     lineWeight = 1,
     renderFlags = {"scaleX", "scaleY"},
-    LODs = {1, "UI\\TacticalIcons\\Meshes\\Dot.hod"}
+    LODs = {1, "UI\\TacticalIcons\\Meshes\\TriangleLeft.hod"}
 }
 
--- this one won't ever be shown
 mouseOverMesh =
 {
     colour = {0,0,0,0},
     lineWeight = 2,
     renderFlags = {"scaleX", "scaleY"},
-    LODs = {1, "UI\\TacticalIcons\\Meshes\\Dot_2x.hod"}
+    LODs = {1, "UI\\TacticalIcons\\Meshes\\TriangleLeft_2x.hod"}
 }
