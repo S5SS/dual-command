@@ -13,3 +13,9 @@
 ## Healing
 > *Healing slows units down a substantial amount.*
 * **Speed reduction under healing** `65% => 95%` (Meaning units will only be 5% slower when being healed)
+
+## Hyperspace
+> *There *
+* **Hyperspace distance cost halved** (This does not make hyperspace twice as cheap - the distance you must hyperspace to reach the min/max cost is just higher)
+* **HW2 carrier hyperspace min cost reduced to same as HW2**
+* **Vaygr Flagship hyperspace cost is now the same as Hiigaran to make destroyer rush more viable.**
