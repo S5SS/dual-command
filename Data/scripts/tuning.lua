@@ -184,7 +184,7 @@ WeaponFire = {
 
 HyperSpace = {
 	-- ru cost of hyperspace (max cost is stored per ship type)
-	costPerMetre				= 0.02,
+	costPerMetre				= 0.01,
 	minSpeedForHyperspace		= 5.0,
 }
 
