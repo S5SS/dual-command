@@ -1,5 +1,5 @@
 modName = "v2.4 Competitors Patch"
-modBuild = "10.4"
+modBuild = "11"
 
 -- Build/Version Info
 function CompetitorsPatch_makeBuildName()
