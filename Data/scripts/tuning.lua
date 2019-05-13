@@ -184,7 +184,7 @@ WeaponFire = {
 
 HyperSpace = {
 	-- ru cost of hyperspace (max cost is stored per ship type)
-	costPerMetre				= 0.02,
+	costPerMetre				= 0.01,
 	minSpeedForHyperspace		= 5.0,
 }
 
@@ -218,7 +218,7 @@ RepairInfo = {
 	-- when a repair ship is latched to a target it will wait this many seconds after the repairs are finished before unlatching
 	timeToWaitAfterLastDamageBeforeUnlatching				= 5.0,
 	-- when ships are trying to repair the target is slowed down to this amount of it's max speed
-	slowDownFactor                                          = 0.65,
+	slowDownFactor                                          = 0.95,
 }
 
 EngineTrailInfo = {

@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1534"
 NewShipType.sobDescription="$1535"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 18000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 16000)
 NewShipType.regentime=850
 NewShipType.minRegenTime=850
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -152,10 +152,10 @@ addAbility(NewShipType,"RetireAbility",1,1);
 addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","Hgn_ResourceController",4)
 -- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense1","Weapon_HullDefense1");
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense3","Weapon_HullDefense3");
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense5","Weapon_HullDefense5");
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense8","Weapon_HullDefense8");
+StartShipWeaponConfig(NewShipType,"Hw2_MobGun","Weapon_HullDefense1","Weapon_HullDefense1");
+StartShipWeaponConfig(NewShipType,"Hw2_MobGun","Weapon_HullDefense3","Weapon_HullDefense3");
+StartShipWeaponConfig(NewShipType,"Hw2_MobGun","Weapon_HullDefense5","Weapon_HullDefense5");
+StartShipWeaponConfig(NewShipType,"Hw2_MobGun","Weapon_HullDefense8","Weapon_HullDefense8");
 addShield(NewShipType,"EMP",220,20);
 NewShipType.battleScarCoverage=2
 NewShipType.battleScarBudgetLow = 400
