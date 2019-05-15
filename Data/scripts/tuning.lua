@@ -419,7 +419,7 @@ CollisionInfo = {
 		},
 		{
 			"HeavyArmour",
-			0.2,
+			0.16,
 		},
 	},
 }
