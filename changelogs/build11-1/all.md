@@ -2,6 +2,7 @@
 
 ## Hot-Fixes
 * **Assault craft damage to HW2 fighters reverted to pre-build 8 amount** (It was balanced before hand - it did not need changing.)
+* **Fixed build times not showing for certain modules and units.**
 
 ## Misc
 * **Hiigaran advanced research module build time** `150s => 140s`
