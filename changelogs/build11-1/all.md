@@ -6,6 +6,6 @@
 
 ## Misc
 * **Hiigaran advanced research module build time** `150s => 140s`
-* **Hiigaran advanced research module icon changed** (It is slightly different to the normal research module but its almost un-noticeable.)
+* **Hiigaran advanced research module icon changed** (It used to be slightly different to the normal research module icon but it was almost un-noticeable.)
 * **Hiigaran battlecruiser research time** `140s => 150s` (To make up for the shorter advanced research module build time.)
 * **HW1 scout speed boost amount** `+25% => +10%` (They are almost impossible to catch because of speed boost.)
