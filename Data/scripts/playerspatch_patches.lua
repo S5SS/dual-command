@@ -1,6 +1,24 @@
 -- Doesn't appear to be global across units
 -- inhibitors = {}
 
+function any(collection, predicate)
+    for i = 1, getn(collection) do
+        if (predicate(collection[i]) == 1) then
+            return 1
+        end
+    end
+    return 0
+end
+
+function all(collection, predicate)
+    for i = 1, getn(collection) do
+        if (predicate(collection[i]) == 0) then
+            return 0
+        end
+    end
+    return 1
+end
+
 function Update_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 	-- Hack to disable scuttle while a unit is being dropped off by salvage corvettes
 	SobGroup_AbilityActivate(CustomGroup, AB_Scuttle, 1 - SobGroup_IsDoingAbility(CustomGroup, AB_Dock))
