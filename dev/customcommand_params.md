@@ -1,6 +1,6 @@
 This is all I've been able to discover:
 
-```lua
+```
 addAbility
 (
 	NewShipType,
