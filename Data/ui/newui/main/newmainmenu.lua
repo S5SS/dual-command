@@ -3,8 +3,6 @@ dofilepath("data:ui/newui/Styles/HWRM_Style/ControlConstructors.lua")
 dofilepath("data:ui/newui/Examples/ExampleIncludes.lua")
 dofilepath("data:ui/newui/Background/logo.lua")
 dofilepath("data:ui/newui/Main/ExButtons.lua")
-dofilepath("data:build.lua")
-
 
 OptionsButton = [[
 	-- Resets the additional slider positions
@@ -183,16 +181,4 @@ NewMainMenu = {
 		},
 	
 	},
-	
-
-	-- Comment out this frame if you dont want the build info...
-	--{
-	--	type = "Frame",
-	--	autosize = 1,
-	--	position = {2, 600 - 15},
-	--	;
-		
-		-- Build/Version Info
-		CompetitorsPatch_makeBuildName()
-	--},
 }
