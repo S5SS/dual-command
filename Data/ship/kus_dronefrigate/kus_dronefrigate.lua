@@ -1,77 +1,121 @@
-drone_attacking = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 }
+KUS_DRONEFRIGATE_DRONE_COUNT = 14
+KUS_DRONEFRIGATE_WEAPON_RANGE = 2660
 
-function Start_DroneFrigate(CustomGroup, playerIndex, shipID) 
-	SobGroup_SetSpeed(CustomGroup, 0.9)
-	local r = random(1,6)
-	FX_StartEvent(CustomGroup, "dronelaunch_sfx"..r)
+function SobGroup_AnyBeingCaptured(group)
+	local group_being_captured = group .. "_being_captured"
+	SobGroup_CreateAndClear(group_being_captured)
+	SobGroup_GetSobGroupBeingCapturedGroup(group, group_being_captured)
+	if (SobGroup_Count(group_being_captured) > 0) then
+		return 1
+	end
+	return 0
 end
 
-function Do_DroneFrigate(CustomGroup, playerIndex, shipID)  	
-	SobGroup_CreateIfNotExist("dronefrigate_temp")
-	SobGroup_CreateIfNotExist("dronefrigate_temp1")
-	SobGroup_CreateIfNotExist("dronefrigate_temp2")				
-	SobGroup_Clear("dronefrigate_temp2")		
-	SobGroup_GetSobGroupBeingCapturedGroup(CustomGroup, "dronefrigate_temp2")		
-	for k = 0,13,1 do
-		SobGroup_CreateIfNotExist("kus_drone" .. tostring(shipID) .. tostring(k))		
-		SobGroup_Clear("dronefrigate_temp")
-		SobGroup_Clear("dronefrigate_temp1")
-		SobGroup_GetSobGroupDockedWithGroup(CustomGroup, "dronefrigate_temp")
-		SobGroup_FillShipsByType("dronefrigate_temp1", "dronefrigate_temp", "kus_drone"..k)
-		SobGroup_SobGroupAdd("kus_drone" .. tostring(shipID) .. tostring(k), "dronefrigate_temp1")
-		if SobGroup_Count("kus_drone" .. tostring(shipID) .. tostring(k)) == 0 and
-			SobGroup_IsDoingAbility(CustomGroup, AB_Hyperspace) == 0 and				
-			SobGroup_IsDoingAbility(CustomGroup, AB_HyperspaceViaGate) == 0 and
-			SobGroup_AreAllInRealSpace(CustomGroup) == 1 and
-			SobGroup_IsDoingAbility(CustomGroup, AB_Dock) == 0 and				
-			SobGroup_IsDoingAbility(CustomGroup, AB_Retire) == 0 and
-			SobGroup_Count("dronefrigate_temp2") == 0 then
-			local CreateGroup = SobGroup_CreateShip(CustomGroup, "kus_drone"..k)
-			SobGroup_SobGroupAdd("kus_drone" .. tostring(shipID) .. tostring(k), CreateGroup)
-			if k == 0 or k == 4 or k == 8 or k == 12 then
-				FX_StartEvent(CustomGroup, "dronelaunch1")
-			elseif k == 1 or k == 5 or k == 9 or k == 13 then
-				FX_StartEvent(CustomGroup, "dronelaunch2")
-			elseif k == 2 or k == 6 or k == 10 then	
-				FX_StartEvent(CustomGroup, "dronelaunch3")
-			elseif k == 3 or k == 7 or k == 11 then	
-				FX_StartEvent(CustomGroup, "dronelaunch4")
+function SobGroup_AnyAreAttacking(group)
+	local group_attacking = group .. "_attacking"
+	SobGroup_CreateAndClear(group_attacking)
+	SobGroup_GetCommandTargets(group_attacking, group, COMMAND_Attack)
+	if (SobGroup_Count(group_attacking) > 0) then
+		return 1
+	end
+	return 0
+end
+
+function SobGroup_CreateAndClear(name)
+	SobGroup_CreateIfNotExist(name)
+	SobGroup_Clear(name)
+	return name;
+end
+
+function DroneFrigate_IsReady(frigate)
+	return (SobGroup_IsDoingAbility(frigate, AB_Hyperspace) == 0 and				
+	SobGroup_IsDoingAbility(frigate, AB_HyperspaceViaGate) == 0 and
+	SobGroup_AreAllInRealSpace(frigate) == 1 and
+	SobGroup_IsDoingAbility(frigate, AB_Dock) == 0 and				
+	SobGroup_IsDoingAbility(frigate, AB_Retire) == 0 and
+	SobGroup_AnyBeingCaptured(frigate) == 0)
+end
+
+function CreateNewDrone(index, drone, frigate, frigate_id)
+	SobGroup_CreateIfNotExist(drone)
+	if SobGroup_Count(drone) == 0 and -- group for this drone is empty, create the drone and add to group
+		DroneFrigate_IsReady(frigate) then
+		local new_drone = SobGroup_CreateShip(frigate, "kus_drone" .. index) -- CreateShip simulates a build completion - ship will be launched from parent
+		SobGroup_SobGroupAdd(drone, new_drone)
+		SobGroup_SobGroupAdd("all_drones" .. frigate_id, drone)
+		if index == 0 or index == 4 or index == 8 or index == 12 then
+			FX_StartEvent(frigate, "dronelaunch1")
+		elseif index == 1 or index == 5 or index == 9 or index == 13 then
+			FX_StartEvent(frigate, "dronelaunch2")
+		elseif index == 2 or index == 6 or index == 10 then	
+			FX_StartEvent(frigate, "dronelaunch3")
+		elseif index == 3 or index == 7 or index == 11 then	
+			FX_StartEvent(frigate, "dronelaunch4")
+		end
+	end
+end
+
+function Drone_LaunchIfPossible(index, drone, frigate)
+	if SobGroup_IsDockedSobGroup(drone, frigate) == 1 then-- drone was docked
+		if DroneFrigate_IsReady(frigate) then
+			SobGroup_Launch(drone, frigate)
+			if index == 0 or index == 4 or index == 8 or index == 12 then
+				FX_StartEvent(frigate, "dronelaunch1")
+			elseif index == 1 or index == 5 or index == 9 or index == 13 then
+				FX_StartEvent(frigate, "dronelaunch2")
+			elseif index == 2 or index == 6 or index == 10 then	
+				FX_StartEvent(frigate, "dronelaunch3")
+			elseif index == 3 or index == 7 or index == 11 then	
+				FX_StartEvent(frigate, "dronelaunch4")
 			end
-			break
+			local left_with = "left_overs"
+			SobGroup_CreateAndClear(left_with)
+			SobGroup_GetSobGroupDockedWithGroup(frigate, left_with)
+		end
+	end
+end
+
+function Drone_SetActive(drone, active)
+	SobGroup_AbilityActivate(drone, AB_Attack, active)
+	SobGroup_AbilityActivate(drone, AB_Targeting, active)
+end
+
+function Start_DroneFrigate(CustomGroup, playerIndex, shipID) 
+	local r = random(1,6)
+	FX_StartEvent(CustomGroup, "dronelaunch_sfx"..r)
+
+	for k = 0, KUS_DRONEFRIGATE_DRONE_COUNT - 1 do
+		local this_drone = "kus_drone" .. tostring(shipID) .. tostring(k)
+		if (SobGroup_Count(this_drone) == 0) then
+			CreateNewDrone(k, this_drone, CustomGroup, shipID)
+		end
+	end
+end
+
+function Do_DroneFrigate(CustomGroup, playerIndex, shipID)
+	
+	local docked_with_frigate_group = "docked_with_" .. shipID
+	SobGroup_CreateAndClear(docked_with_frigate_group)
+	SobGroup_GetSobGroupDockedWithGroup(CustomGroup, docked_with_frigate_group)
+	for k = 0, KUS_DRONEFRIGATE_DRONE_COUNT - 1 do
+		local this_drone = "kus_drone" .. tostring(shipID) .. tostring(k)
+		if (SobGroup_Count(this_drone) == 0) then
+			CreateNewDrone(k, this_drone, CustomGroup, shipID)
 		else
-			--SobGroup_SwitchOwner("kus_drone" .. tostring(shipID) .. tostring(k), playerIndex)
-			if SobGroup_IsDockedSobGroup("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup) == 1 and
-			SobGroup_IsDoingAbility(CustomGroup, AB_Hyperspace) == 0 and
-			SobGroup_IsDoingAbility(CustomGroup, AB_HyperspaceViaGate) == 0 and
-			SobGroup_AreAllInRealSpace(CustomGroup) == 1 and
-			SobGroup_IsDoingAbility(CustomGroup, AB_Dock) == 0 and				
-			SobGroup_IsDoingAbility(CustomGroup, AB_Retire) == 0 and
-			SobGroup_Count("dronefrigate_temp2") == 0 then
-				SobGroup_Launch("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
-				if k == 0 or k == 4 or k == 8 or k == 12 then
-					FX_StartEvent(CustomGroup, "dronelaunch1")
-				elseif k == 1 or k == 5 or k == 9 or k == 13 then
-					FX_StartEvent(CustomGroup, "dronelaunch2")
-				elseif k == 2 or k == 6 or k == 10 then	
-					FX_StartEvent(CustomGroup, "dronelaunch3")
-				elseif k == 3 or k == 7 or k == 11 then	
-					FX_StartEvent(CustomGroup, "dronelaunch4")
-				end
-				break
-			end				
-		end			
+			Drone_LaunchIfPossible(k, this_drone, CustomGroup)
+		end
 	end		
 end
 
 function Finish_DroneFrigate(CustomGroup, playerIndex, shipID)	
-	SobGroup_SetSpeed(CustomGroup, 1)
 	local r = random(1,6)
 	FX_StartEvent(CustomGroup, "droneretract_sfx"..r)
-	for k = 0,13,1 do
-		if SobGroup_Empty("kus_drone" .. tostring(shipID) .. tostring(k)) == 0 then
-			SobGroup_AbilityActivate("kus_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 0)
-			SobGroup_AbilityActivate("kus_drone" .. tostring(shipID) .. tostring(k), AB_Attack, 0)
-			SobGroup_DockSobGroupAndStayDocked("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
+	for k = 0, SobGroup_Count("all_drones" .. shipID) - 1 do
+		local this_drone = "kus_drone" .. tostring(shipID) .. tostring(k)
+		if SobGroup_Empty(this_drone) == 0 then
+			SobGroup_AbilityActivate(this_drone, AB_Targeting, 0)
+			SobGroup_AbilityActivate(this_drone, AB_Attack, 0)
+			SobGroup_DockSobGroupAndStayDocked(this_drone, CustomGroup)
 		end	
 	end	
 end
@@ -80,26 +124,24 @@ end
 
 function Create_DroneFrigate(CustomGroup, playerIndex, shipID)
 	SobGroup_SetSwitchOwnerFlag(CustomGroup, 0)
-	SobGroup_CreateIfNotExist("dronefrigate_temp")
-	SobGroup_CreateIfNotExist("dronefrigate_temp1")
-	SobGroup_CreateIfNotExist("dronefrigate_temp2")
-	for k = 0,13,1 do
-		SobGroup_CreateIfNotExist("kus_drone" .. tostring(shipID) .. tostring(k))		
-	end
+
+	SobGroup_CreateIfNotExist("all_drones" .. shipID)
+	SobGroup_CreateIfNotExist("frigate_attack_targets" .. shipID)
+	SobGroup_CreateIfNotExist("drone_attack_targets" .. shipID)
 end
 
 function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 	SobGroup_AbilityActivate(CustomGroup, AB_Scuttle, 1 - SobGroup_IsDoingAbility(CustomGroup, AB_Dock))
-	SobGroup_CreateIfNotExist("dronefrigate_temp2")
-	SobGroup_Clear("dronefrigate_temp2")	
-	SobGroup_GetSobGroupBeingCapturedGroup(CustomGroup, "dronefrigate_temp2")
+
+	-- unsure what this is for, seems to force drone activation if enemy ships are nearby
+	-- although i have no idea what the GetLevelOfDifficulty function does in MP ~ fear
 	if Player_GetLevelOfDifficulty(playerIndex) > 0 then
 		local playerIndex_ai = 0		
 		local enemyships = 0
 		while playerIndex_ai < Universe_PlayerCount() do
 			if Player_IsAlive(playerIndex_ai) == 1 then								
 				local distance = 4000
-				if SobGroup_FillProximitySobGroup("dronefrigate_temp1", "Player_Ships"..playerIndex_ai, CustomGroup, distance) == 1 then									
+				if SobGroup_FillProximitySobGroup(SobGroup_CreateAndClear("temp_" .. shipID), "Player_Ships"..playerIndex_ai, CustomGroup, distance) == 1 then									
 					if AreAllied(playerIndex, playerIndex_ai) == 0 then						
 						enemyships = 1
 					end					
@@ -113,54 +155,56 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 			end
 		end
 	end
-	for k = 0,13,1 do
-		if SobGroup_Empty("kus_drone" .. tostring(shipID) .. tostring(k)) == 0 then
-			if SobGroup_IsDockedSobGroup("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup) == 0 and
-			SobGroup_IsDoingAbility("kus_drone" .. tostring(shipID) .. tostring(k), AB_Parade) == 0 and
-			SobGroup_IsDoingAbility("kus_drone" .. tostring(shipID) .. tostring(k), AB_Dock) == 0 then
-				SobGroup_ParadeSobGroup("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup, 0)
-			end
-			if SobGroup_GetDistanceToSobGroup("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup) > 950 then
-				SobGroup_TakeDamage("kus_drone" .. tostring(shipID) .. tostring(k), 1)
-			elseif SobGroup_GetDistanceToSobGroup("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup) > 275 then
-				SobGroup_AbilityActivate("kus_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 0)
-				SobGroup_AbilityActivate("kus_drone" .. tostring(shipID) .. tostring(k), AB_Attack, 0)
-			else
-				SobGroup_AbilityActivate("kus_drone" .. tostring(shipID) .. tostring(k), AB_Targeting, 1)
-				SobGroup_AbilityActivate("kus_drone" .. tostring(shipID) .. tostring(k), AB_Attack, 1)
-				SobGroup_GuardSobGroup ("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup) 
-			end			
-			if SobGroup_IsDoingAbility(CustomGroup, AB_Hyperspace) == 1 or
-			SobGroup_IsDoingAbility(CustomGroup, AB_HyperspaceViaGate) == 1 or
-			SobGroup_AreAllInRealSpace(CustomGroup) == 0 or
-			SobGroup_IsDoingAbility(CustomGroup, AB_Dock) == 1 or			
-			SobGroup_IsDoingAbility(CustomGroup, AB_Retire) == 1 or
-			SobGroup_Count("dronefrigate_temp2") > 0 or
-			SobGroup_OwnedBy("kus_drone" .. tostring(shipID) .. tostring(k)) ~= playerIndex then					
-				SobGroup_TakeDamage("kus_drone" .. tostring(shipID) .. tostring(k), 1)
-				--SobGroup_DockSobGroupInstant("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
-			end
-			if SobGroup_IsDoingAbility(CustomGroup, AB_Attack) == 1 then
-				if drone_attacking[k] == -1 or drone_attacking[k] == DefensiveROE then
-					SobGroup_SetROE("kus_drone" .. tostring(shipID) .. tostring(k), OffensiveROE) 
-					drone_attacking[k] = OffensiveROE
+
+	for k = 0, SobGroup_Count("all_drones" .. shipID) - 1 do
+		local this_drone = "kus_drone" .. tostring(shipID) .. tostring(k)
+		SobGroup_SetROE(this_drone, SobGroup_GetROE(CustomGroup))
+		Drone_SetActive(this_drone, 1)
+		if SobGroup_Empty(this_drone) == 0 then
+			if 	SobGroup_IsDockedSobGroup(this_drone, CustomGroup) == 0 and
+				SobGroup_IsDoingAbility(this_drone, AB_Dock) == 0 then
+
+				if SobGroup_GetDistanceToSobGroup(this_drone, CustomGroup) > 950 then -- too far from frigate, die
+					SobGroup_TakeDamage(this_drone, 1)
 				end
-			else
-			if SobGroup_IsDoingAbility(CustomGroup, AB_Attack) == 0 then
-				if drone_attacking[k] == -1 or drone_attacking[k] == OffensiveROE then
-					SobGroup_SetROE("kus_drone" .. tostring(shipID) .. tostring(k), DefensiveROE) 
-					drone_attacking[k] = DefensiveROE
+
+				if SobGroup_AnyAreAttacking(CustomGroup) == 1 then -- override our target to attack anything the frigate itself is attacking
+					local frigate_attack_targets = "frigate_attack_targets" .. shipID
+					SobGroup_GetCommandTargets(frigate_attack_targets, CustomGroup, COMMAND_Attack)
+					if (SobGroup_GetDistanceToSobGroup(this_drone, frigate_attack_targets) <= KUS_DRONEFRIGATE_WEAPON_RANGE) then
+						SobGroup_Attack(playerIndex, this_drone, frigate_attack_targets)
+					end
+				elseif SobGroup_IsCloaked(CustomGroup) == 1 or SobGroup_GetROE(CustomGroup) == PassiveROE then
+					Drone_SetActive(this_drone, 0)
+					SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0)
 				end
+
+				if (SobGroup_AnyAreAttacking(this_drone) == 1) then -- this check is seperate so the frigate can (uniquely) do move commands while shooting
+					if (SobGroup_GetDistanceToSobGroup(this_drone, CustomGroup) > 300) then
+						SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, SobGroup_GetPosition(CustomGroup)) -- move close to frigate
+					end
+				else
+					SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0) -- reform parade around frigate
+				end
+
 			end
-			end
-		end	
-	end	
+		end		
+
+		if (SobGroup_OwnedBy(this_drone) ~= playerIndex or not DroneFrigate_IsReady(CustomGroup)) then					
+			SobGroup_TakeDamage(this_drone, 1)
+			--SobGroup_DockSobGroupInstant("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
+		end
+	end
+
 end
 
+
+
 function Destroy_DroneFrigate(CustomGroup, playerIndex, shipID)	
-	for k = 0,13,1 do
-		if SobGroup_Empty("kus_drone" .. tostring(shipID) .. tostring(k)) == 0 then
-			SobGroup_TakeDamage("kus_drone" .. tostring(shipID) .. tostring(k), 1)
+	for k = 0,SobGroup_Count("all_drones" .. shipID) - 1,1 do
+		local this_drone = "kus_drone" .. tostring(shipID) .. tostring(k)
+		if SobGroup_Empty(this_drone) == 0 then
+			SobGroup_TakeDamage(this_drone, 1)
 		end	
 	end
 end
